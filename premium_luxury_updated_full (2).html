@@ -1,0 +1,4024 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo D'Ávila - Automações que FALAM [ULTRA PREMIUM LUXO]</title>
+    
+    <!-- PERFORMANCE HINTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://ipinfo.io">
+    <link rel="preconnect" href="https://api.geogs.io">
+    <link rel="dns-prefetch" href="https://wa.me">
+    
+    <!-- Fonte manuscrita -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <!-- CRITICAL CSS INLINE - ULTRA PREMIUM DARK LUXURY -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        
+        /* Scroll suave global */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 20px;
+        }
+        
+        :root{
+            /* NOVA PALETA ULTRA PREMIUM LUXO */
+            --color-bg:#1A2035;                    /* Azul petróleo profundo */
+            --color-text-primary:#F8F5F0;          /* Off-white elegante */
+            --color-text-secondary:#B4B4B4;        /* Cinza claro premium */
+            --color-cta:#D4AF37;                   /* Dourado puro luxo */
+            --color-accent:#D4AF37;                /* Dourado para destaques */
+            --pure-white:#ffffff;
+            --success-green:#10b981;               /* Verde premium */
+            --error-red:#ef4444;                   /* Vermelho vivo */
+            
+            /* Gradientes luxuosos */
+            --gradient-gold:linear-gradient(135deg,#D4AF37 0%,#FFD700 50%,#B8860B 100%);
+            --gradient-luxury:linear-gradient(135deg,#1A2035 0%,#2A3552 50%,#1F2B47 100%);
+            --gradient-dark-card:linear-gradient(135deg,#212B44 0%,#1A2035 50%,#161D2F 100%);
+            --gradient-premium-glass:linear-gradient(135deg,rgba(248,245,240,0.1) 0%,rgba(212,175,55,0.1) 100%);
+            
+            /* Sombras premium */
+            --shadow-card:0 8px 32px rgba(0,0,0,0.4), 0 4px 16px rgba(212,175,55,0.1);
+            --shadow-luxury:0 12px 40px rgba(0,0,0,0.6), 0 4px 20px rgba(212,175,55,0.2);
+            --shadow-glow:0 0 30px rgba(212,175,55,0.3), 0 0 60px rgba(212,175,55,0.1);
+            
+            /* Transições suaves */
+            --transition-fast:all 0.3s cubic-bezier(0.4,0,0.2,1);
+            --transition-smooth:all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-impact:all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        body{
+            font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+            background:var(--gradient-luxury);
+            color:var(--color-text-primary);
+            line-height:1.6;
+            min-height:100vh;
+            overflow-x:hidden;
+            scroll-behavior:smooth;
+            /* Textura sutil */
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(212,175,55,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(212,175,55,0.05) 0%, transparent 50%);
+        }
+        
+        .container{max-width:420px;margin:0 auto;padding:0 20px}
+        
+        .section{
+            background:var(--gradient-dark-card);
+            border-radius:25px;
+            padding:30px 25px;
+            margin:25px 0;
+            box-shadow:var(--shadow-card);
+            border:2px solid rgba(212,175,55,0.2);
+            position:relative;
+            overflow:hidden;
+            display:none;
+            opacity:0;
+            transform:translateY(20px);
+            transition:all 0.4s cubic-bezier(0.4,0,0.2,1);
+            /* Glass effect premium */
+            backdrop-filter: blur(20px);
+        }
+        
+        .section.active{
+            display:block;
+            opacity:1;
+            transform:translateY(0);
+        }
+        
+        .section::before{
+            content:'';
+            position:absolute;
+            top:0;left:0;right:0;
+            height:6px;
+            background:var(--gradient-gold);
+            box-shadow: 0 2px 10px rgba(212,175,55,0.5);
+        }
+        
+        /* Efeito brilho sutil nos cards */
+        .section::after{
+            content:'';
+            position:absolute;
+            top:-50%;left:-50%;
+            width:200%;height:200%;
+            background:radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%);
+            animation:subtleGlow 6s ease-in-out infinite;
+            pointer-events:none;
+        }
+        
+        @keyframes subtleGlow {
+            0%, 100% { opacity: 0.3; transform: rotate(0deg); }
+            50% { opacity: 0.6; transform: rotate(180deg); }
+        }
+        
+        .btn{
+            background:var(--gradient-gold);
+            color:var(--color-bg);
+            border:none;
+            padding:18px 32px;
+            border-radius:15px;
+            font-size:18px;
+            font-weight:800;
+            cursor:pointer;
+            width:100%;
+            transition:var(--transition-fast);
+            letter-spacing:-0.3px;
+            box-shadow:var(--shadow-card);
+            text-transform:uppercase;
+            position:relative;
+            overflow:hidden;
+        }
+        
+        .btn::before{
+            content:'';
+            position:absolute;
+            top:0;left:-100%;
+            width:100%;height:100%;
+            background:linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition:left 0.6s ease;
+        }
+        
+        .btn:hover::before{
+            left:100%;
+        }
+        
+        .btn:hover{
+            transform:translateY(-3px) scale(1.02);
+            box-shadow:var(--shadow-luxury), 0 0 12px #D4AF37;
+            transition: all 0.3s ease;
+        }
+        
+        .sr-only{
+            position:absolute;
+            width:1px;height:1px;
+            padding:0;margin:-1px;
+            overflow:hidden;
+            clip:rect(0,0,0,0);
+            white-space:nowrap;
+            border:0;
+        }
+        
+        /* === CARD 1 SPECIFIC STYLES - ULTRA LUXURY === */
+        .card-1-container {
+            text-align: center;
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+            position: relative;
+            z-index: 10;
+            /* Fundo ultra premium */
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(212,175,55,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(212,175,55,0.05) 0%, transparent 50%),
+                var(--gradient-luxury);
+        }
+        
+        /* Transição de saída para Card 1 */
+        .card-1-container.exiting {
+            opacity: 0;
+            transform: scale(0.9) translateY(-50px);
+            filter: blur(4px);
+            pointer-events: none;
+        }
+        
+        .card-1-hero {
+            background: var(--gradient-dark-card);
+            backdrop-filter: blur(30px);
+            border-radius: 25px;
+            padding: 30px 25px;
+            text-align: center;
+            margin-bottom: 40px;
+            transition: var(--transition-smooth);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-luxury);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-1-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-gold);
+            box-shadow: 0 2px 15px rgba(212,175,55,0.6);
+        }
+        
+        .card-1-title {
+            font-size: 28px;
+            font-weight: 900;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+            transition: var(--transition-smooth);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.5);
+            filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
+        }
+        
+        .card-1-subtitle {
+            font-size: 18px;
+            color: var(--color-text-primary);
+            font-weight: 600;
+            line-height: 1.5;
+            max-width: 350px;
+            margin: 0 auto;
+            transition: var(--transition-smooth);
+        }
+        
+        .avatar-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+            transition: var(--transition-smooth);
+        }
+        
+        .avatar {
+            width: 420px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-luxury);
+            border: 3px solid rgba(212, 175, 55, 0.5);
+            max-width: 90vw;
+            transition: transform 0.8s ease-in-out;
+        }
+        
+        /* Piscar mais elegante */
+        @keyframes luxuryBlink {
+            0%, 100% { 
+                filter: brightness(1) contrast(1.1); 
+                box-shadow: var(--shadow-luxury);
+            }
+            50% { 
+                filter: brightness(0.9) contrast(1.2); 
+                box-shadow: var(--shadow-glow);
+            }
+        }
+
+        .avatar.piscando {
+            animation: luxuryBlink 2.5s infinite ease-in-out;
+        }
+        
+        /* Efeito Pulso Ultra Premium */
+        @keyframes avatarLuxuryPulse {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: var(--shadow-luxury);
+                filter: brightness(1);
+            }
+            50% { 
+                transform: scale(1.08);
+                box-shadow: var(--shadow-glow);
+                filter: brightness(1.1);
+            }
+        }
+        
+        .avatar.pulse-effect {
+            animation: avatarLuxuryPulse 2s ease-in-out;
+        }
+        
+        /* Efeito "respiração" premium */
+        @keyframes avatarLuxuryBreathing {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: var(--shadow-luxury);
+                filter: brightness(1);
+            }
+            50% { 
+                transform: scale(1.03);
+                box-shadow: var(--shadow-glow);
+                filter: brightness(1.05);
+            }
+        }
+        
+        .avatar.breathing {
+            animation: avatarLuxuryBreathing 4s ease-in-out infinite;
+        }
+        
+        /* Efeito especial para quando está falando */
+        @keyframes avatarLuxurySpeaking {
+            0%, 100% { 
+                transform: scale(1);
+                border-color: rgba(212, 175, 55, 0.5);
+                filter: brightness(1);
+            }
+            25% { 
+                transform: scale(1.02);
+                border-color: rgba(212, 175, 55, 0.8);
+                filter: brightness(1.05);
+            }
+            75% { 
+                transform: scale(1.04);
+                border-color: var(--color-accent);
+                filter: brightness(1.1);
+            }
+        }
+        
+        .avatar.speaking {
+            animation: avatarLuxurySpeaking 2s ease-in-out infinite;
+            box-shadow: var(--shadow-glow);
+        }
+
+        #mensagem-papel {
+            position: absolute;
+            top: 74.2%;
+            left: 48.2%;
+            transform: translate(-50%, -50%);
+            font-family: 'Patrick Hand', cursive;
+            font-size: 14.5px;
+            width: 160px;
+            text-align: center;
+            line-height: 1.5;
+            white-space: pre-line;
+            color: #1A2035; /* Mantém escuro para contraste no papel */
+            transition: var(--transition-smooth);
+        }
+
+        .destaque-ola {
+            font-size: 16.5px;
+            font-weight: bold;
+            color: #1A2035;
+        }
+
+        .cidade-estilo {
+            color: #8B6914; /* Dourado mais escuro para contraste */
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        .card-1-form {
+            background: var(--gradient-dark-card);
+            backdrop-filter: blur(30px);
+            border-radius: 20px;
+            padding: 35px 30px;
+            box-shadow: var(--shadow-luxury);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            width: 100%;
+            max-width: 380px;
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+            transition: var(--transition-impact);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-1-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-gold);
+            box-shadow: 0 2px 15px rgba(212,175,55,0.6);
+        }
+        
+        .card-1-form.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        
+        .name-title{
+            font-size:19px;
+            font-weight:700;
+            text-align:center;
+            margin-bottom:22px;
+            color:var(--color-text-primary);
+        }
+        
+        .name-input{
+            width:100%;
+            padding:18px 22px;
+            border:3px solid var(--color-accent);
+            border-radius:15px;
+            font-size:17px;
+            margin-bottom:16px;
+            font-weight:600;
+            text-align:center;
+            background:rgba(248,245,240,0.1);
+            color:var(--color-text-primary);
+            backdrop-filter:blur(10px);
+            transition:var(--transition-fast);
+        }
+        
+        .name-input::placeholder{
+            color:var(--color-text-secondary);
+        }
+        
+        .name-input:focus{
+            outline:none;
+            border-color:var(--color-accent);
+            background:rgba(248,245,240,0.2);
+            box-shadow:0 0 20px rgba(212,175,55,0.3);
+            transform:scale(1.02);
+        }
+        
+        /* === CARD 2 CONTAINER === */
+        .card-2-container {
+            opacity: 0;
+            transform: translateY(100px) scale(1.05);
+            transition: var(--transition-impact);
+            position: relative;
+            z-index: 5;
+        }
+        
+        .card-2-container.entering {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        
+        /* === FLOATING CTA SYSTEM ULTRA LUXURY === */
+        .floating-cta {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 999;
+            opacity: 0;
+            transform: scale(0) translateY(20px);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            pointer-events: none;
+        }
+        
+        .floating-cta.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            pointer-events: all;
+        }
+        
+        .floating-btn {
+            background: var(--gradient-gold);
+            border: 2px solid rgba(248, 245, 240, 0.3);
+            color: var(--color-bg);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: var(--shadow-luxury);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+            animation: luxuryFloatPulse 4s ease-in-out infinite;
+            backdrop-filter: blur(15px);
+        }
+        
+        .floating-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(248, 245, 240, 0.4), 
+                transparent);
+            transition: left 0.8s ease;
+        }
+        
+        .floating-btn:hover::before {
+            left: 100%;
+        }
+        
+        .floating-btn:hover {
+            width: auto;
+            min-width: 180px;
+            border-radius: 30px;
+            padding: 0 25px;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .floating-btn:hover .btn-icon {
+            margin-right: 8px;
+        }
+        
+        .floating-btn:hover .btn-text {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .btn-icon {
+            transition: all 0.4s ease;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+        }
+        
+        .btn-text {
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.4s ease;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            white-space: nowrap;
+        }
+        
+        @keyframes luxuryFloatPulse {
+            0%, 100% {
+                box-shadow: var(--shadow-luxury);
+                filter: brightness(1);
+            }
+            50% {
+                box-shadow: var(--shadow-glow);
+                transform: translateY(-2px);
+                filter: brightness(1.1);
+            }
+        }
+        
+        /* FLOATING STATES */
+        .floating-btn.price-revealed .btn-text {
+            color: var(--color-bg);
+        }
+        
+        .floating-btn.urgent {
+            animation: urgentLuxuryShake 0.5s ease-in-out 3;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+        }
+        
+        @keyframes urgentLuxuryShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-3px); }
+            75% { transform: translateX(3px); }
+        }
+        
+        /* === SMART NOTIFICATION SYSTEM LUXURY === */
+        .smart-notification {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            max-width: 320px;
+            background: var(--gradient-dark-card);
+            backdrop-filter: blur(30px);
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            border-radius: 20px;
+            padding: 20px 25px;
+            z-index: 998;
+            opacity: 0;
+            transform: translateX(400px) scale(0.9);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: var(--shadow-luxury);
+        }
+        
+        .smart-notification.show {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+        
+        .notification-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .notification-icon {
+            font-size: 24px;
+            animation: luxuryNotifPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes luxuryNotifPulse {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.1); filter: brightness(1.2); }
+        }
+        
+        .notification-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--color-text-primary);
+            line-height: 1.2;
+        }
+        
+        .notification-body {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+        
+        .notification-cta {
+            background: var(--gradient-gold);
+            color: var(--color-bg);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: 800;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .notification-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-luxury), 0 0 12px #D4AF37;
+            transition: all 0.3s ease;
+        }
+        
+        .notification-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--color-text-secondary);
+            opacity: 0.7;
+            transition: all 0.2s ease;
+        }
+        
+        .notification-close:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            color: var(--color-text-primary);
+        }
+        
+        /* LOADING SYSTEM LUXURY */
+        .hypnotic-loader{
+            position:fixed;
+            top:0;left:0;width:100%;height:4px;
+            background:rgba(26,32,53,0.8);
+            z-index:1001;
+            overflow:hidden;
+        }
+        
+        .hypnotic-progress{
+            height:100%;
+            background:var(--gradient-gold);
+            width:0%;
+            transition:width 0.3s ease;
+            box-shadow: 0 0 10px rgba(212,175,55,0.6);
+        }
+        
+        /* CHAT BUBBLE LUXURY */
+        .chat-bubble{
+            position:fixed;
+            bottom:20px;left:50%;
+            transform:translateX(-50%);
+            background:var(--gradient-dark-card);
+            backdrop-filter:blur(30px);
+            color:var(--color-text-primary);
+            padding:18px 50px 18px 22px;
+            border-radius:25px;
+            max-width:420px;
+            width:calc(100vw - 40px);
+            border:3px solid var(--color-accent);
+            box-shadow:var(--shadow-luxury);
+            display:none;
+            z-index:1000;
+            animation:bubbleLuxuryEnter 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+        }
+        
+        .chat-bubble.active{display:block}
+        .chat-bubble.completed{border-color:var(--success-green)}
+        
+        .bubble-text{
+            font-size:15px;
+            font-weight:700;
+            text-align:center;
+            margin:0;
+            line-height:1.3;
+        }
+        
+        .mic-icon{
+            position:absolute;
+            top:-10px;left:15px;
+            background:var(--color-accent);
+            color:var(--color-bg);
+            width:28px;height:28px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:12px;
+            animation:micLuxuryPulse 1.2s infinite;
+            box-shadow:0 4px 15px rgba(212,175,55,0.4);
+        }
+        
+        .replay-btn{
+            position:absolute;
+            top:50%;right:15px;
+            transform:translateY(-50%);
+            background:var(--color-accent);
+            color:var(--color-bg);
+            width:26px;height:26px;
+            border-radius:50%;
+            border:none;
+            cursor:pointer;
+            font-size:11px;
+            opacity:0;
+            transition:var(--transition-fast);
+            box-shadow:0 4px 15px rgba(212,175,55,0.4);
+        }
+        
+        .chat-bubble.completed .replay-btn{
+            opacity:1;
+            transform:translateY(-50%) scale(1.05);
+        }
+        
+        @keyframes bubbleLuxuryEnter{
+            0%{opacity:0;transform:translateX(-50%) translateY(30px) scale(0.8)}
+            100%{opacity:1;transform:translateX(-50%) translateY(0) scale(1)}
+        }
+        
+        @keyframes micLuxuryPulse{
+            0%,100%{transform:scale(1); box-shadow:0 4px 15px rgba(212,175,55,0.4);}
+            50%{transform:scale(1.15); box-shadow:0 6px 20px rgba(212,175,55,0.6);}
+        }
+        
+        /* MOBILE OPTIMIZATION LUXURY */
+        @media (max-width:480px){
+            .container{padding:0 15px}
+            .btn{font-size:16px;padding:16px 28px}
+            .section{padding:20px 18px;margin:20px 0}
+            .bubble-text{font-size:13px}
+            .card-1-title{font-size:24px}
+            .card-1-subtitle{font-size:16px}
+            .avatar{width:340px}
+            #mensagem-papel{font-size:12px !important;width:140px !important}
+            .card-1-form{padding:25px 20px}
+            .name-title{font-size:17px}
+            .name-input{font-size:16px;padding:16px 20px}
+            
+            .floating-cta {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 20px;
+            }
+            
+            .floating-btn:hover {
+                min-width: 160px;
+                padding: 0 20px;
+            }
+            
+            .btn-text {
+                font-size: 14px;
+            }
+            
+            .smart-notification {
+                top: 20px;
+                right: 20px;
+                left: 20px;
+                max-width: none;
+                transform: translateY(-200px) scale(0.9);
+            }
+            
+            .smart-notification.show {
+                transform: translateY(0) scale(1);
+            }
+            
+            .notification-title {
+                font-size: 14px;
+            }
+            
+            .notification-body {
+                font-size: 12px;
+            }
+            
+            .notification-cta {
+                font-size: 13px;
+                padding: 8px 16px;
+            }
+        }
+        
+        @media (max-width:360px){
+            .avatar{width:300px}
+            #mensagem-papel{font-size:10.5px !important;width:120px !important}
+        }
+    </style>
+    
+    <!-- FONT LOADING -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+</head>
+<body>
+    <!-- ARIA Live Region -->
+    <div id="aria-announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    
+    <!-- Loading Premium -->
+    <div class="hypnotic-loader" id="hypnoticLoader" role="progressbar" aria-label="Carregando conteúdo">
+        <div class="hypnotic-progress" id="hypnoticProgress"></div>
+    </div>
+
+    <!-- Chat Bubble Premium -->
+    <div class="chat-bubble" id="chatBubble" role="complementary" aria-live="polite">
+        <div class="mic-icon" id="micIcon" aria-hidden="true">🎤</div>
+        <div class="bubble-text" id="bubbleText"></div>
+        <button class="replay-btn" id="replayBtn" onclick="replayAudio()" aria-label="Repetir mensagem de áudio" type="button">🔁</button>
+    </div>
+
+    <!-- Smart Notification System -->
+    <div class="smart-notification" id="smartNotification">
+        <button class="notification-close" onclick="closeNotification()">×</button>
+        <div class="notification-header">
+            <span class="notification-icon" id="notifIcon">👀</span>
+            <div class="notification-title" id="notifTitle">Ainda explorando?</div>
+        </div>
+        <div class="notification-body" id="notifBody">
+            Ei, pessoal de <span id="notifCity">Timóteo</span>! Esta oferta especial termina hoje às 23:59h.
+        </div>
+        <button class="notification-cta" onclick="scrollToOffer()">Ver Oferta R$ 47</button>
+    </div>
+
+    <!-- Floating CTA System -->
+    <div class="floating-cta" id="floatingCTA" style="display: none;">
+        <button class="floating-btn" onclick="handleFloatingClick()" id="floatingBtn">
+            <span class="btn-icon" id="floatingIcon">⚡</span>
+            <span class="btn-text" id="floatingText">Comprar R$ 47</span>
+        </button>
+    </div>
+
+    <!-- === CARD 1: AVATAR + COLETA NOME === -->
+    <div id="card1Container" class="card-1-container">
+        <!-- Hero Section -->
+        <div class="card-1-hero" id="heroSection">
+            <h1 class="card-1-title">MARCELO D'ÁVILA</h1>
+            <p class="card-1-subtitle">
+                Crie automações, sites e links que <strong>FALAM</strong> e <strong>EMOCIONAM</strong> – sem programação, ZERO código.
+            </p>
+        </div>
+        
+        <!-- Avatar Section -->
+        <div class="avatar-container">
+            <img src="https://raw.githubusercontent.com/marcelo-davila-setup/fotos-usina/main/avatar-card1.jpg" alt="Avatar com papel" class="avatar" id="avatarImage" />
+            <div id="mensagem-papel">Olá...<br><span style="color:#d93a3a; font-weight:bold;">Uai Sô</span><br><span style="color:#A67C00; font-weight:bold; font-style:italic;">É de Ipatinga?</span></div>
+        </div>
+        
+        <!-- Form Section -->
+        <div class="card-1-form" id="card1Form">
+            <h2 class="name-title">Como posso te chamar?</h2>
+            <input 
+                type="text" 
+                class="name-input" 
+                id="nameInput" 
+                placeholder="Digite seu primeiro nome" 
+                maxlength="25"
+                autocomplete="given-name"
+            >
+            <button class="btn" onclick="submitName()" type="button">Continuar</button>
+        </div>
+    </div>
+
+    <!-- === CARD 2: EXPERIÊNCIA COMPLETA === -->
+    <div class="container card-2-container" id="card2Container" style="display: none;">
+        <!-- MENSAGEM PERSONALIZADA GLASS PREMIUM -->
+        <section class="section personalized-message-section" id="messageSection" role="main" aria-labelledby="message-title">
+            <header class="message-header">
+                <div class="message-content">
+                    <h2 class="message-title" id="message-title">
+                        🎯 Uai Sô, <span id="userName1">Nome</span>!
+                    </h2>
+                    <p class="message-subtitle">Uma mensagem especial cruzou o Brasil para chegar até você</p>
+                </div>
+            </header>
+            
+            <!-- TEMPORAL INFO PREMIUM -->
+            <div class="temporal-info-premium" role="complementary">
+                <div class="temporal-main">
+                    <span class="day-info">É <span id="dayOfWeek">sexta</span>, <span id="dayPersonalization">sextou</span>!</span>
+                </div>
+                <div class="temporal-details">
+                    <div class="temporal-item">
+                        <span class="temporal-icon">📅</span>
+                        <span id="formattedDate">11 de julho</span>
+                    </div>
+                    <div class="temporal-item">
+                        <span class="temporal-icon">🕐</span>
+                        <span id="timeOfDay">bom dia</span>, <span id="specificTime">10 horas e 39 minutos</span>
+                    </div>
+                    <div class="temporal-item">
+                        <span class="temporal-icon">🌤️</span>
+                        <span id="climaRegional">Tempo bom para inovar!</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container" role="img" aria-labelledby="map-title">
+                <h3 id="map-title" class="map-title">🗺️ Jornada da Mensagem</h3>
+                
+                <div class="route-visualization" aria-label="Visualização da rota da mensagem">
+                    <div class="route-point">
+                        <div class="point-marker" aria-hidden="true">📍</div>
+                        <div class="point-label">Timóteo-MG</div>
+                    </div>
+                    <div class="route-line" aria-label="Linha de conexão entre as cidades">
+                        <div class="traveling-pulse" aria-hidden="true"></div>
+                    </div>
+                    <div class="route-point">
+                        <div class="point-marker" aria-hidden="true">🎯</div>
+                        <div class="point-label" id="destinationLabel">Sua Cidade</div>
+                    </div>
+                </div>
+                
+                <div class="distance-display">
+                    <div class="distance-main" id="distanceMain">Calculando...</div>
+                </div>
+                
+                <div class="distance-details" role="list" aria-label="Detalhes da jornada">
+                    <div class="distance-item" role="listitem">
+                        <span class="distance-number" id="distance1">---</span>
+                        <span class="distance-label">quilômetros</span>
+                    </div>
+                    <div class="distance-item" role="listitem">
+                        <span class="distance-number" id="travelTime">---</span>
+                        <span class="distance-label">de viagem</span>
+                    </div>
+                    <div class="distance-item" role="listitem">
+                        <span class="distance-number">0.2</span>
+                        <span class="distance-label">segundos online</span>
+                    </div>
+                </div>
+            </div>
+            
+            <aside class="contextual-info-premium" role="complementary">
+                <p class="contextual-main-premium">
+                    <strong>É terra do <span id="food1">pão de queijo</span>, né <span id="userName2">Nome</span>!</strong>
+                </p>
+                <p class="contextual-secondary">
+                    <strong><span id="distance2">XXX</span> quilômetros</strong> de Timóteo-MG!<br>
+                    <strong><span id="greetingOnly">Uai</span>, você é especial!</strong>
+                </p>
+            </aside>
+        </section>
+
+        <!-- Lazy-loaded sections container -->
+        <div id="lazy-sections" aria-live="polite"></div>
+    </div>
+
+    <!-- NON-CRITICAL CSS LUXURY -->
+    <style id="non-critical-css">
+        /* SEÇÃO REVELAÇÃO - ULTRA LUXURY */
+        .revelacao-section {
+            background: var(--gradient-dark-card);
+            backdrop-filter: blur(30px);
+            border-radius: 25px;
+            padding: 0;
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            box-shadow: var(--shadow-luxury);
+            animation: revelacaoLuxuryReveal 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .revelacao-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-gold);
+            box-shadow: 0 2px 15px rgba(212,175,55,0.6);
+        }
+        
+        @keyframes revelacaoLuxuryReveal {
+            0% {
+                opacity: 0;
+                transform: scale(0.95) translateY(30px);
+                filter: blur(5px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+                filter: blur(0);
+            }
+        }
+        
+        .revelacao-header {
+            background: var(--gradient-gold);
+            color: var(--color-bg);
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .revelacao-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+            animation: iconLuxuryFloat 2s ease-in-out infinite;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+        }
+        
+        @keyframes iconLuxuryFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-5px) scale(1.05); }
+        }
+        
+        .revelacao-title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+        
+        .revelacao-subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .revelacao-content {
+            padding: 30px 25px;
+        }
+        
+        .revelacao-main {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--color-text-primary);
+        }
+        
+        .nichos-grid-premium {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .nicho-item-premium {
+            background: rgba(248, 245, 240, 0.1);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 18px 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-card);
+            text-align: center;
+        }
+        
+        .nicho-item-premium:hover {
+            transform: translateY(-3px) scale(1.02);
+            background: rgba(248, 245, 240, 0.2);
+            border-color: rgba(212, 175, 55, 0.6);
+            box-shadow: var(--shadow-luxury);
+        }
+        
+        .nicho-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .nicho-emoji {
+            font-size: 20px;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+        }
+        
+        .nicho-text {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            line-height: 1.2;
+        }
+        
+        .nicho-valor {
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--color-accent);
+            background: rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 6px 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            margin-top: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            filter: drop-shadow(0 0 8px rgba(212,175,55,0.3));
+        }
+        
+        .nichos-extras {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(212, 175, 55, 0.08);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow-card);
+        }
+        
+        .extras-titulo {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-accent);
+            text-align: center;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .extras-lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+        
+        .extra-item {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            background: rgba(248, 245, 240, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        
+        .extra-item:hover {
+            background: rgba(248, 245, 240, 0.2);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-card);
+        }
+        
+        .revelacao-impacto {
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(16, 185, 129, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 15px;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .impacto-calculo {
+            text-align: center;
+        }
+        
+        .calculo-titulo {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--success-green);
+            margin-bottom: 10px;
+        }
+        
+        .calculo-exemplo {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+        
+        .valor-destaque {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--success-green);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            filter: drop-shadow(0 0 10px rgba(16,185,129,0.4));
+        }
+        
+        .revelacao-urgencia {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--error-red);
+            text-align: center;
+            margin-top: 15px;
+            padding: 12px;
+            background: rgba(239, 68, 68, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            animation: urgencyPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes urgencyPulse {
+            0%, 100% { 
+                box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+                transform: scale(1.01);
+            }
+        }
+        
+        .revelacao-final {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 18px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-card);
+        }
+        
+        .revelacao-impact {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--color-text-primary);
+        }
+        
+        .destaque-comum {
+            color: var(--error-red);
+            text-decoration: line-through;
+            text-decoration-color: var(--error-red);
+            text-decoration-thickness: 2px;
+        }
+        
+        .revelacao-value {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            line-height: 1.4;
+        }
+        
+        .destaque-alma {
+            color: var(--color-accent);
+            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
+        }
+        
+        /* SEÇÃO MENSAGEM PERSONALIZADA - ULTRA LUXURY */
+        .personalized-message-section {
+            background: var(--gradient-dark-card);
+            backdrop-filter: blur(30px);
+            border-radius: 25px;
+            padding: 0;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-luxury);
+            animation: messageLuxuryReveal 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes messageLuxuryReveal {
+            0% {
+                opacity: 0;
+                transform: scale(0.95) translateY(20px);
+                filter: blur(3px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+                filter: blur(0);
+            }
+        }
+        
+        .message-header {
+            background: var(--gradient-gold);
+            color: var(--color-bg);
+            padding: 30px 25px;
+            border-radius: 25px 25px 0 0;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .message-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+        
+        .message-subtitle {
+            font-size: 12px;
+            opacity: 0.9;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        /* TEMPORAL INFO LUXURY */
+        .temporal-info-premium {
+            background: rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 18px;
+            padding: 20px 18px;
+            margin: 25px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: var(--shadow-card);
+            text-align: center;
+        }
+        
+        .temporal-main {
+            margin-bottom: 15px;
+        }
+        
+        .day-info {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--color-accent);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
+        }
+        
+        .temporal-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+        
+        .temporal-item {
+            background: rgba(248, 245, 240, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 10px 12px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: var(--transition-fast);
+        }
+        
+        .temporal-item:hover {
+            transform: translateY(-1px);
+            background: rgba(248, 245, 240, 0.2);
+            box-shadow: var(--shadow-luxury);
+        }
+        
+        .temporal-icon {
+            font-size: 14px;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+        }
+        
+        .map-container {
+            background: rgba(248, 245, 240, 0.08);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 25px 20px;
+            margin: 25px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .map-title {
+            color: var(--color-accent);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        .route-visualization {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+            padding: 0 10px;
+        }
+        
+        .route-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+        }
+        
+        .point-marker {
+            font-size: 24px;
+            margin-bottom: 8px;
+            animation: markerLuxuryPulse 2s ease-in-out infinite;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+        }
+        
+        @keyframes markerLuxuryPulse {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.1); filter: brightness(1.2); }
+        }
+        
+        .point-label {
+            background: rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(15px);
+            color: var(--color-text-primary);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 10px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            transition: var(--transition-fast);
+        }
+        
+        .point-label:hover {
+            background: rgba(212, 175, 55, 0.3);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-luxury);
+        }
+        
+        .route-line {
+            flex: 1;
+            height: 4px;
+            background: linear-gradient(90deg,
+                rgba(212, 175, 55, 0.4) 0%,
+                rgba(212, 175, 55, 0.8) 50%,
+                rgba(212, 175, 55, 0.4) 100%);
+            position: relative;
+            margin: 0 15px;
+            border-radius: 2px;
+            overflow: hidden;
+            min-width: 80px;
+            box-shadow: 0 2px 8px rgba(212,175,55,0.3);
+        }
+        
+        .traveling-pulse {
+            position: absolute;
+            width: 15px;
+            height: 4px;
+            background: rgba(248, 245, 240, 0.9);
+            border-radius: 2px;
+            animation: travelLuxuryPulse 3s ease-in-out infinite;
+            box-shadow: 0 0 12px rgba(248, 245, 240, 0.8);
+        }
+        
+        @keyframes travelLuxuryPulse {
+            0% { left: -15px; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { left: calc(100% + 15px); opacity: 0; }
+        }
+        
+        .distance-display {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .distance-main {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--color-accent);
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            filter: drop-shadow(0 0 15px rgba(212,175,55,0.4));
+        }
+        
+        .distance-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .distance-item {
+            background: rgba(248, 245, 240, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 12px 8px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: var(--transition-fast);
+        }
+        
+        .distance-item:hover {
+            transform: translateY(-1px);
+            background: rgba(248, 245, 240, 0.2);
+            box-shadow: var(--shadow-luxury);
+        }
+        
+        .distance-number {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--color-accent);
+            display: block;
+        }
+        
+        .distance-label {
+            font-size: 10px;
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+        
+        .contextual-info-premium {
+            text-align: center;
+            padding: 20px 15px;
+            background: rgba(212, 175, 55, 0.12);
+            backdrop-filter: blur(20px);
+            border-radius: 18px;
+            margin: 20px 25px 25px 25px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-card);
+        }
+        
+        .contextual-main-premium {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-accent);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .contextual-secondary {
+            font-size: 14px;
+            color: var(--color-text-primary);
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+        
+        .contextual-footer {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            font-style: italic;
+            opacity: 0.8;
+        }
+        
+        /* DEMO VIDEO LUXURY */
+        .demo-video{
+            width:200px;
+            height:150px;
+            background:var(--gradient-dark-card);
+            backdrop-filter:blur(20px);
+            border-radius:25px;
+            margin:20px auto;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:60px;
+            cursor:pointer;
+            transition:all 0.2s cubic-bezier(0.4,0,0.2,1);
+            position:relative;
+            box-shadow:var(--shadow-luxury);
+            border:2px solid rgba(212,175,55,0.3);
+        }
+        
+        .demo-video:hover{
+            transform:scale(1.05);
+            box-shadow:var(--shadow-glow);
+        }
+        
+        .play-btn{
+            position:absolute;
+            top:10px;right:10px;
+            background:var(--gradient-gold);
+            color:var(--color-bg);
+            width:32px;height:32px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:16px;
+            box-shadow:0 4px 15px rgba(212,175,55,0.4);
+        }
+        
+        /* VIDEO PROGRESS BAR LUXURY */
+        #videoProgress{
+            width:100%;
+            height:6px;
+            background:rgba(26,32,53,0.6);
+            border-radius:3px;
+            margin:15px 0;
+            overflow:hidden;
+            box-shadow:inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        #videoProgressBar{
+            height:100%;
+            background:var(--gradient-gold);
+            width:0%;
+            transition:width 0.5s ease;
+            border-radius:3px;
+            box-shadow:0 0 10px rgba(212,175,55,0.6);
+        }
+        
+        #videoTimer{
+            text-align:center;
+            font-size:12px;
+            color:var(--color-text-secondary);
+            font-weight:600;
+        }
+        
+        /* MENTAL TEST LUXURY */
+        .mental-test{
+            background:var(--gradient-dark-card);
+            backdrop-filter:blur(30px);
+            border:3px solid var(--color-accent);
+            text-align:center;
+            box-shadow:var(--shadow-luxury);
+        }
+        
+        .test-items-three{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:18px;
+            margin:25px 0;
+        }
+        
+        .test-items-three .test-item:last-child{
+            grid-column:1/-1;
+            max-width:280px;
+            margin:0 auto;
+        }
+        
+        .test-item{
+            background:rgba(248,245,240,0.08);
+            backdrop-filter:blur(15px);
+            border:3px solid rgba(212,175,55,0.4);
+            border-radius:18px;
+            padding:20px;
+            opacity:0;
+            transform:translateY(20px);
+            transition:all 0.2s cubic-bezier(0.4,0,0.2,1);
+            box-shadow:var(--shadow-card);
+        }
+        
+        .test-item.visible{
+            opacity:1;
+            transform:translateY(0);
+        }
+        
+        .test-item.forbidden{
+            background:rgba(239,68,68,0.15);
+            border-color:var(--error-red);
+            animation:forbiddenLuxuryPulse 1.5s infinite;
+        }
+        
+        @keyframes forbiddenLuxuryPulse{
+            0%,100%{box-shadow:0 0 15px rgba(239,68,68,0.3)}
+            50%{box-shadow:0 0 25px rgba(239,68,68,0.6), 0 0 35px rgba(239,68,68,0.4)}
+        }
+        
+        .test-icon{
+            font-size:40px;
+            display:block;
+            margin-bottom:10px;
+            filter:drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+        }
+        
+        .revelation{
+            background:rgba(239,68,68,0.15);
+            backdrop-filter:blur(20px);
+            border:3px solid var(--error-red);
+            border-radius:18px;
+            padding:20px;
+            margin:25px 0;
+            display:none;
+            animation:revelationLuxuryGlow 2s infinite;
+            box-shadow:var(--shadow-luxury);
+        }
+        
+        @keyframes revelationLuxuryGlow{
+            0%,100%{box-shadow:0 0 20px rgba(239,68,68,0.4)}
+            50%{box-shadow:0 0 30px rgba(239,68,68,0.7), 0 0 40px rgba(239,68,68,0.3)}
+        }
+        
+        /* OFFER SECTION LUXURY */
+        .offer-section{
+            background:var(--gradient-dark-card);
+            color:var(--color-text-primary);
+            text-align:center;
+            backdrop-filter:blur(30px);
+            box-shadow:var(--shadow-luxury);
+        }
+        
+        .offer-price{
+            font-size:38px;
+            font-weight:900;
+            margin:20px 0;
+            color:var(--color-accent);
+            text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+            filter:drop-shadow(0 0 15px rgba(212,175,55,0.4));
+        }
+        
+        .offer-savings{
+            background:var(--success-green);
+            color:white;
+            padding:10px 20px;
+            border-radius:30px;
+            font-weight:700;
+            display:inline-block;
+            margin:15px 0;
+            box-shadow:0 6px 20px rgba(16,185,129,0.4);
+        }
+        
+        .reflection-question{
+            background:rgba(212,175,55,0.15);
+            backdrop-filter:blur(20px);
+            border:2px solid rgba(212,175,55,0.4);
+            border-radius:15px;
+            padding:15px;
+            margin:20px 0;
+            font-size:16px;
+            font-weight:700;
+            color:var(--color-text-primary);
+            line-height:1.4;
+            box-shadow:var(--shadow-card);
+        }
+        
+        /* FORM STYLES LUXURY */
+        .form-group{
+            margin-bottom:15px;
+            text-align:left;
+        }
+        
+        .form-label{
+            display:block;
+            font-weight:600;
+            margin-bottom:6px;
+            color:var(--color-text-secondary);
+            font-size:14px;
+        }
+        
+        .form-input{
+            width:100%;
+            padding:14px 18px;
+            border:3px solid rgba(212,175,55,0.4);
+            border-radius:12px;
+            font-size:16px;
+            background:rgba(248,245,240,0.08);
+            backdrop-filter:blur(15px);
+            color:var(--color-text-primary);
+            transition:all 0.15s cubic-bezier(0.4,0,0.2,1);
+            box-shadow:var(--shadow-card);
+        }
+        
+        .form-input::placeholder{
+            color:var(--color-text-secondary);
+        }
+        
+        .form-input:focus{
+            outline:none;
+            border-color:var(--color-accent);
+            background:rgba(248,245,240,0.15);
+            box-shadow:0 0 20px rgba(212,175,55,0.3);
+            transform:scale(1.01);
+        }
+        
+        .whatsapp-btn{
+            background:#25D366;
+            color:white;
+            border:none;
+            padding:16px 25px;
+            border-radius:15px;
+            font-weight:700;
+            cursor:pointer;
+            width:100%;
+            font-size:16px;
+            transition:all 0.2s cubic-bezier(0.4,0,0.2,1);
+            box-shadow:0 6px 20px rgba(37,211,102,0.4);
+            text-transform:uppercase;
+        }
+        
+        .whatsapp-btn:hover{
+            background:#128C7E;
+            transform:translateY(-2px) scale(1.01);
+            box-shadow:0 8px 25px rgba(37,211,102,0.6), 0 0 12px #25D366;
+            transition: all 0.3s ease;
+        }
+        
+        /* PREMIUM GLASS BUTTON ULTRA LUXURY */
+        .premium-glass-btn {
+            background: var(--gradient-gold) !important;
+            backdrop-filter: blur(30px) !important;
+            border: 2px solid rgba(248, 245, 240, 0.3) !important;
+            color: var(--color-bg) !important;
+            font-weight: 900 !important;
+            font-size: 18px !important;
+            letter-spacing: 0.5px !important;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+            box-shadow: var(--shadow-luxury) !important;
+            animation: premiumLuxuryPulse 2s ease-in-out infinite !important;
+            margin-top: 20px !important;
+            position: relative !important;
+            overflow: hidden !important;
+            text-transform: uppercase !important;
+        }
+        
+        .premium-glass-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(248, 245, 240, 0.4), 
+                transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .premium-glass-btn:hover::before {
+            left: 100%;
+        }
+        
+        .premium-glass-btn:hover {
+            transform: translateY(-3px) scale(1.02) !important;
+            box-shadow: var(--shadow-glow), 0 0 12px #D4AF37 !important;
+            border-color: rgba(248, 245, 240, 0.5) !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .premium-glass-btn:active {
+            transform: translateY(-1px) scale(1.01) !important;
+        }
+        
+        @keyframes premiumLuxuryPulse {
+            0%, 100% {
+                box-shadow: var(--shadow-luxury);
+                border-color: rgba(248, 245, 240, 0.3);
+                filter: brightness(1);
+            }
+            50% {
+                box-shadow: var(--shadow-glow);
+                border-color: rgba(248, 245, 240, 0.5);
+                filter: brightness(1.1);
+            }
+        }
+        
+        /* PRICE ANIMATION LUXURY - MOBILE OPTIMIZED */
+        .price-animation-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        #originalPrice {
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--color-text-primary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-label {
+            display: inline;
+        }
+        
+        .price-value {
+            display: inline;
+        }
+        
+        #strikethrough {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--error-red);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.8s ease-in-out;
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+        }
+        
+        /* MOBILE EXCELLENCE ULTRA LUXURY */
+        @media (max-width: 480px) {
+            .personalized-message-section {
+                border-radius: 20px;
+                margin: 15px 0;
+            }
+            
+            .message-header {
+                padding: 20px 18px;
+                border-radius: 20px 20px 0 0;
+            }
+            
+            .message-title {
+                font-size: 18px;
+                line-height: 1.3;
+            }
+            
+            .message-subtitle {
+                font-size: 11px;
+            }
+            
+            .day-info {
+                font-size: 16px;
+            }
+            
+            .temporal-item {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+            
+            .distance-main {
+                font-size: 20px;
+            }
+            
+            .distance-details {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .distance-number {
+                font-size: 16px;
+            }
+            
+            .distance-label {
+                font-size: 9px;
+            }
+            
+            .map-container {
+                margin: 15px;
+                padding: 18px 15px;
+                border-radius: 15px;
+            }
+            
+            .map-title {
+                font-size: 12px;
+            }
+            
+            .temporal-info-premium {
+                margin: 15px;
+                padding: 15px 12px;
+                border-radius: 15px;
+            }
+            
+            .contextual-info-premium {
+                margin: 15px;
+                padding: 15px 12px;
+                border-radius: 15px;
+            }
+            
+            .contextual-main-premium {
+                font-size: 14px;
+            }
+            
+            .contextual-secondary {
+                font-size: 12px;
+            }
+            
+            .route-line {
+                min-width: 50px;
+                margin: 0 8px;
+            }
+            
+            .point-label {
+                font-size: 8px;
+                padding: 4px 8px;
+            }
+            
+            .nichos-grid-premium {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin: 20px 0;
+            }
+            
+            .nicho-item-premium {
+                padding: 15px 12px;
+            }
+            
+            .nicho-header {
+                gap: 6px;
+                margin-bottom: 6px;
+            }
+            
+            .nicho-emoji {
+                font-size: 18px;
+            }
+            
+            .nicho-text {
+                font-size: 12px;
+                line-height: 1.1;
+            }
+            
+            .nicho-valor {
+                font-size: 13px;
+                padding: 5px 10px;
+            }
+            
+            .nichos-extras {
+                margin: 20px 0;
+                padding: 15px;
+            }
+            
+            .extras-titulo {
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
+            
+            .extras-lista {
+                gap: 6px;
+            }
+            
+            .extra-item {
+                font-size: 10px;
+                padding: 5px 8px;
+            }
+            
+            .revelacao-impacto {
+                margin: 20px 0;
+                padding: 15px;
+            }
+            
+            .calculo-titulo {
+                font-size: 14px;
+            }
+            
+            .calculo-exemplo {
+                font-size: 13px;
+            }
+            
+            .valor-destaque {
+                font-size: 16px;
+            }
+            
+            .revelacao-urgencia {
+                font-size: 13px;
+                padding: 10px;
+            }
+            
+            .demo-video {
+                width: 160px;
+                height: 120px;
+                font-size: 45px;
+            }
+            
+            .play-btn {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
+            }
+            
+            .test-items-three .test-item:last-child {
+                grid-column: 1;
+                max-width: 100%;
+            }
+            
+            #originalPrice {
+                font-size: 16px !important;
+            }
+            
+            .offer-price {
+                font-size: 28px;
+            }
+            
+            .reflection-question {
+                font-size: 14px;
+                padding: 12px;
+            }
+            
+            .premium-glass-btn {
+                font-size: 16px !important;
+                padding: 16px 24px !important;
+            }
+            
+            .price-label {
+                display: block;
+                margin-bottom: 4px;
+            }
+            
+            .price-value {
+                display: block;
+            }
+            
+            .revelacao-section {
+                border-radius: 20px;
+                margin: 15px 0;
+            }
+            
+            .revelacao-header {
+                padding: 20px 18px;
+            }
+            
+            .revelacao-icon {
+                font-size: 28px;
+            }
+            
+            .revelacao-title {
+                font-size: 18px;
+                line-height: 1.3;
+            }
+            
+            .revelacao-subtitle {
+                font-size: 12px;
+            }
+            
+            .revelacao-content {
+                padding: 20px 18px;
+            }
+            
+            .revelacao-main {
+                font-size: 16px;
+            }
+            
+            .revelacao-impact {
+                font-size: 16px;
+            }
+            
+            .revelacao-value {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <!-- COMPRESSED JAVASCRIPT COM TIMINGS CIRÚRGICOS E PALETA LUXURY -->
+    <script>
+        // === USER DATA ===
+        let userData = {
+            name: '',
+            city: 'Ipatinga',
+            state: 'MG',
+            distance: 16,
+            travelTime: '12min',
+            greeting: 'Uai',
+            periodGreeting: 'É tardezinha, uai',
+            food: 'pão de queijo',
+            demonym: 'mineiro',
+            email: '',
+            whatsapp: ''
+        };
+
+        let currentStep = 1;
+        let speechQueue = [];
+        let isSpeaking = false;
+        let lastSpokenText = '';
+
+        // === FLOATING CTA & SMART NOTIFICATION SYSTEM ===
+        let floatingCTAState = 'hidden'; 
+        let notificationState = 'hidden'; 
+        let scrollDepth = 0;
+        let timeOnPage = 0;
+        let userEngagement = 0;
+        let videoWasClicked = false;
+        let videoAutoAdvanceTimer = null;
+
+        // SURGICAL TIMING CALCULATIONS - CORRIGIDO CONFORME SOLICITADO
+        const TIMING = {
+            // Card 1 - Timings cirúrgicos corrigidos
+            heroShow: 5000,              // 5s para hero MARCELO D'ÁVILA (AUMENTADO de 2.5s para 5s)
+            heroToAvatar: 1500,          // 1.5s para ir ao papel
+            paperHold: 2400,             // 2.4s segurando no papel (CORRIGIDO)
+            avatarToForm: 1500,          // 1.5s descida para formulário
+            
+            // Card 2 - Scroll sincronizado com narração - TEMPOS AUMENTADOS
+            messageStart: 2000,          // 2s segurar início da mensagem
+            headerHold: 12000,           // 12s no header (AUMENTADO de 6s para 12s)
+            scrollReveal: 800,           // 0.8s para cada scroll reveal
+            
+            // Post-video timing
+            postVideoFloating: 5000,     
+            postVideoNotification: 15000, 
+            
+            // Other timings
+            floatingAppear: 999999,       
+            notificationTrigger: 999999,  
+            priceReveal: 45000,          
+            urgencyMode: 180000,         
+            scrollEngaged: 30,           
+            scrollCommitted: 60,         
+            scrollHot: 85,               
+            notificationShow: 12000,     
+            transitionDeep: 800,         
+            scrollFocus: 1200,           
+        };
+
+        // === CARD 1: AVATAR SYSTEM OTIMIZADO ===
+        const destino = document.getElementById("mensagem-papel");
+        const card1Form = document.getElementById("card1Form");
+        const nameInput = document.getElementById("nameInput");
+        const avatar = document.querySelector(".avatar");
+        const heroSection = document.getElementById("heroSection");
+        
+        if (avatar) avatar.classList.add("piscando");
+
+        // Variáveis globais para TTS otimizado
+        let vozBrasileiraCard1 = null;
+        let sistemaAudioAtivado = false;
+
+        // === FUNÇÕES DOS EFEITOS DE AVATAR ===
+        function triggerAvatarPulse() {
+            if (avatar) {
+                avatar.classList.remove('pulse-effect');
+                avatar.offsetHeight;
+                avatar.classList.add('pulse-effect');
+                
+                console.log('✨ Avatar pulse effect triggered');
+                
+                setTimeout(() => {
+                    avatar.classList.remove('pulse-effect');
+                }, 1800);
+            }
+        }
+        
+        function startAvatarBreathing() {
+            if (avatar) {
+                avatar.classList.add('breathing');
+                console.log('💨 Avatar breathing started');
+            }
+        }
+        
+        function stopAvatarBreathing() {
+            if (avatar) {
+                avatar.classList.remove('breathing');
+                console.log('🛑 Avatar breathing stopped');
+            }
+        }
+        
+        function startAvatarSpeaking() {
+            if (avatar) {
+                avatar.classList.remove('piscando', 'breathing');
+                avatar.classList.add('speaking');
+                console.log('🗣️ Avatar speaking mode activated');
+            }
+        }
+        
+        function stopAvatarSpeaking() {
+            if (avatar) {
+                avatar.classList.remove('speaking');
+                console.log('🤐 Avatar speaking mode deactivated');
+            }
+        }
+
+        // === CARD 1: SEQUÊNCIA PREMIUM COM TIMING CORRIGIDO ===
+        function executeCard1PremiumSequence() {
+            console.log('🎬 Iniciando sequência premium Card 1 com timings CORRIGIDOS...');
+            
+            // PASSO 1: Segurar hero por 5 segundos (MARCELO D'ÁVILA) - AUMENTADO
+            setTimeout(() => {
+                console.log('📍 PASSO 1: Segurar hero MARCELO D\'ÁVILA por 5s (AUMENTADO)');
+                triggerAvatarPulse();
+                
+                // PASSO 2: Scroll premium para avatar/papel (1.5s)
+                setTimeout(() => {
+                    console.log('📍 PASSO 2: Scroll para avatar/papel');
+                    smoothScrollToElement(avatar, 'center');
+                    triggerAvatarPulse();
+                    
+                    // PASSO 3: Inicia escrita no papel
+                    setTimeout(() => {
+                        console.log('📍 PASSO 3: Iniciando escrita no papel');
+                        iniciarEscritaNoPapel();
+                        
+                    }, TIMING.heroToAvatar);
+                    
+                }, TIMING.heroToAvatar);
+                
+            }, TIMING.heroShow);
+        }
+
+        function iniciarEscritaNoPapel() {
+            console.log('🌍 Iniciando detecção de localização para papel do avatar...');
+            
+            // Saudações regionais para o papel
+            const saudacoesPapel = {
+                "Minas Gerais": ["Uai Sô", "#D4AF37"],
+                "São Paulo": ["E aí", "#D4AF37"],
+                "Rio de Janeiro": ["Falaê", "#D4AF37"],
+                "Rio Grande do Sul": ["Bah Tchê", "#D4AF37"],
+                "Bahia": ["Ôxe", "#D4AF37"],
+                "Pernambuco": ["Eita", "#D4AF37"],
+                "Ceará": ["Arre égua", "#D4AF37"],
+                "Paraná": ["Piá", "#D4AF37"],
+                "Santa Catarina": ["Tchô", "#D4AF37"],
+                "Goiás": ["Rensga", "#D4AF37"]
+            };
+
+            // API DUPLA TAMBÉM PARA O PAPEL DO AVATAR
+            fetch("https://ipinfo.io/json?token=50aa9ee780c6f0")
+                .then(res => res.json())
+                .then(data => {
+                    console.log('📍 Dados da API 1 (ipinfo) para papel:', data);
+                    
+                    const estado = data.region || "Minas Gerais";
+                    const cidade = data.city || "Ipatinga";
+                    const [giria, corGiria] = saudacoesPapel[estado] || ["Uai Sô", "#D4AF37"];
+
+                    // Atualiza dados globais
+                    userData.city = cidade;
+                    userData.state = estado;
+                    userData.greeting = giria;
+
+                    console.log(`🎯 Papel detectado (API 1): ${giria} de ${cidade}-${estado}`);
+
+                    // ATUALIZA PAPEL DO AVATAR COM DELAY DE 1 SEGUNDO
+                    setTimeout(() => {
+                        const papel = document.getElementById('mensagem-papel');
+                        const linha1 = `<span class="destaque-ola">Olá...</span><br>`;
+                        const linha2 = `<span style="color:${corGiria}; font-weight:bold;">${giria}</span><br>`;
+                        const linha3 = `<span class="cidade-estilo">É de ${cidade}?</span>`;
+                        const textoFinal = linha1 + linha2 + linha3;
+                        
+                        papel.innerHTML = textoFinal;
+                        
+                        console.log('📝 Papel atualizado (API 1) com delay de 1s:', textoFinal);
+                        
+                        const fraseFalada = `Olá. ${giria}, é de ${cidade}?`;
+                        
+                        // TTS após mostrar papel
+                        setTimeout(() => {
+                            falarCard1(fraseFalada, () => {
+                                // PASSO 4: SEGURAR NO PAPEL POR 2.4s (CORRIGIDO)
+                                console.log('📍 PASSO 4: Segurando no papel por 2.4s');
+                                setTimeout(() => {
+                                    console.log('📍 PASSO 5: Scroll para formulário após 2.4s no papel');
+                                    card1Form.style.borderColor = corGiria + '40';
+                                    nameInput.style.borderColor = corGiria;
+                                    card1Form.classList.add('visible');
+                                    
+                                    triggerAvatarPulse();
+                                    
+                                    setTimeout(() => {
+                                        smoothScrollToElement(card1Form, 'center');
+                                        setTimeout(() => {
+                                            nameInput.focus();
+                                        }, 600);
+                                    }, TIMING.avatarToForm);
+                                }, TIMING.paperHold); // 2.4s conforme solicitado
+                            });
+                        }, 800);
+                    }, 1000); // DELAY DE 1 SEGUNDO ADICIONADO
+                })
+                .catch(() => {
+                    console.warn('⚠️ API 1 (ipinfo) falhou para papel, tentando API 2 (geogs)...');
+                    
+                    // API 2: GEOGS.IO BACKUP
+                    fetch("https://api.geogs.io/json")
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log('📍 Dados da API 2 (geogs) para papel:', data);
+                            
+                            const estado = data.region_code || data.region || "Minas Gerais";
+                            const cidade = data.city || "Ipatinga";
+                            const [giria, corGiria] = saudacoesPapel[estado] || ["Uai Sô", "#D4AF37"];
+
+                            userData.city = cidade;
+                            userData.state = estado;
+                            userData.greeting = giria;
+
+                            console.log(`🎯 Papel detectado (API 2): ${giria} de ${cidade}-${estado}`);
+
+                            // ATUALIZA PAPEL DO AVATAR COM DELAY DE 1 SEGUNDO (API 2)
+                            setTimeout(() => {
+                                const papel = document.getElementById('mensagem-papel');
+                                const linha1 = `<span class="destaque-ola">Olá...</span><br>`;
+                                const linha2 = `<span style="color:${corGiria}; font-weight:bold;">${giria}</span><br>`;
+                                const linha3 = `<span class="cidade-estilo">É de ${cidade}?</span>`;
+                                const textoFinal = linha1 + linha2 + linha3;
+                                
+                                papel.innerHTML = textoFinal;
+                                
+                                console.log('📝 Papel atualizado (API 2) com delay de 1s:', textoFinal);
+                                
+                                const fraseFalada = `Olá. ${giria}, é de ${cidade}?`;
+
+                                setTimeout(() => {
+                                    falarCard1(fraseFalada, () => {
+                                        setTimeout(() => {
+                                            console.log('📍 API 2: Segurando no papel por 2.4s');
+                                            card1Form.style.borderColor = corGiria + '40';
+                                            nameInput.style.borderColor = corGiria;
+                                            card1Form.classList.add('visible');
+                                            
+                                            triggerAvatarPulse();
+                                            
+                                            setTimeout(() => {
+                                                smoothScrollToElement(card1Form, 'center');
+                                                setTimeout(() => {
+                                                    nameInput.focus();
+                                                }, 600);
+                                            }, TIMING.avatarToForm);
+                                        }, TIMING.paperHold);
+                                    });
+                                }, 800);
+                            }, 1000); // DELAY DE 1 SEGUNDO ADICIONADO PARA API 2
+                        })
+                        .catch(() => {
+                            // FALLBACK PADRÃO COM DELAY DE 1 SEGUNDO
+                            setTimeout(() => {
+                                const papel = document.getElementById('mensagem-papel');
+                                papel.innerHTML = `<span class="destaque-ola">Olá...</span><br><span style="color:#D4AF37; font-weight:bold;">Uai Sô</span><br><span class="cidade-estilo">É de sua cidade?</span>`;
+                                
+                                console.log('📝 Papel atualizado (fallback padrão duplo) com delay de 1s');
+                                
+                                setTimeout(() => {
+                                    falarCard1("Olá, Uai Sô, é de sua cidade?", () => {
+                                        setTimeout(() => {
+                                            console.log('📍 FALLBACK DUPLO: Segurando no papel por 2.4s');
+                                            card1Form.classList.add('visible');
+                                            triggerAvatarPulse();
+                                            setTimeout(() => {
+                                                smoothScrollToElement(card1Form, 'center');
+                                                setTimeout(() => {
+                                                    nameInput.focus();
+                                                }, 600);
+                                            }, TIMING.avatarToForm);
+                                        }, TIMING.paperHold);
+                                    });
+                                }, 1200);
+                            }, 1000); // DELAY DE 1 SEGUNDO NO FALLBACK DUPLO TAMBÉM
+                        });
+                });
+        }
+
+        // === SISTEMA DE GEOLOCALIZAÇÃO DUPLA ROBUSTA ===
+        async function detectLocation() {
+            console.log('🌍 Iniciando detecção de localização com sistema duplo...');
+            
+            // Dados culturais centralizados
+            const culturalData = {
+                'MG': { 
+                    greetings: ['Uai Sô'], 
+                    foods: ['pão de queijo'],
+                    phrases: ['É terra do pão de queijo, né!?'],
+                    demonym: 'mineiro' 
+                },
+                'SP': { 
+                    greetings: ['E aí'], 
+                    foods: ['coxinha', 'pastel'],
+                    phrases: ['É terra da coxinha, né!?', 'É terra do pastel da feira!'],
+                    demonym: 'paulista' 
+                },
+                'RJ': { 
+                    greetings: ['Falaê'], 
+                    foods: ['feijoada', 'açaí'],
+                    phrases: ['É terra da feijoada, né!?', 'É terra do açaí carioca!'],
+                    demonym: 'carioca' 
+                },
+                'RS': { 
+                    greetings: ['Bah Tchê'], 
+                    foods: ['churrasco', 'chimarrão'],
+                    phrases: ['É terra do churrasco, tchê!', 'É terra do chimarrão!'],
+                    demonym: 'gaúcho' 
+                },
+                'BA': { 
+                    greetings: ['Ôxe'], 
+                    foods: ['acarajé', 'cocada'],
+                    phrases: ['É terra do acarajé, oxente!', 'É terra da cocada baiana!'],
+                    demonym: 'baiano' 
+                },
+                'PR': { 
+                    greetings: ['Piá'], 
+                    foods: ['barreado', 'pinhão'],
+                    phrases: ['É terra do barreado, né!?', 'É terra do pinhão!'],
+                    demonym: 'paranaense' 
+                },
+                'SC': { 
+                    greetings: ['Tchô'], 
+                    foods: ['marreco', 'sequência de camarão'],
+                    phrases: ['É terra do marreco, né!?', 'É terra da sequência!'],
+                    demonym: 'catarinense' 
+                },
+                'GO': { 
+                    greetings: ['Rensga'], 
+                    foods: ['pequi', 'empadão goiano'],
+                    phrases: ['É terra do pequi, né!?', 'É terra do empadão!'],
+                    demonym: 'goiano' 
+                },
+                'PE': { 
+                    greetings: ['Eita'], 
+                    foods: ['tapioca', 'bolo de rolo'],
+                    phrases: ['É terra da tapioca, visse!', 'É terra do bolo de rolo!'],
+                    demonym: 'pernambucano' 
+                },
+                'CE': { 
+                    greetings: ['Arre égua'], 
+                    foods: ['baião de dois', 'cuscuz'],
+                    phrases: ['É terra do baião, né!?', 'É terra do cuscuz!'],
+                    demonym: 'cearense' 
+                }
+            };
+
+            function applyLocationData(data, source) {
+                console.log(`🎯 Aplicando dados de localização (${source}):`, data);
+                
+                if (data.city && data.region) {
+                    userData.city = data.city;
+                    userData.state = data.region;
+                    temporalData.climaRegional = getClimaRegional(data.city);
+                    
+                    const cultural = culturalData[data.region] || culturalData['MG'];
+                    userData.greeting = cultural.greetings[0];
+                    userData.food = cultural.foods[0];
+                    userData.demonym = cultural.demonym;
+                    
+                    console.log(`✅ Dados culturais (${source}): ${userData.greeting} / ${userData.food} / ${userData.demonym}`);
+                    
+                    // Calcular distância se coordenadas disponíveis
+                    if (data.latitude && data.longitude) {
+                        const distance = calculateDistance(-19.5797, -42.6297, parseFloat(data.latitude), parseFloat(data.longitude));
+                        userData.distance = Math.round(distance);
+                        userData.travelTime = estimateTravelTime(userData.distance);
+                        console.log(`📏 Distância calculada: ${userData.distance}km (${userData.travelTime})`);
+                    }
+                    
+                    return true;
+                }
+                return false;
+            }
+
+            // ESTRATÉGIA 1: API IPINFO.IO (Mais confiável)
+            try {
+                console.log('🔄 Tentando API 1: ipinfo.io...');
+                const response1 = await fetch('https://ipinfo.io/json?token=50aa9ee780c6f0', {
+                    timeout: 5000
+                });
+                
+                if (response1.ok) {
+                    const data1 = await response1.json();
+                    if (applyLocationData(data1, 'ipinfo.io')) {
+                        console.log('✅ API 1 (ipinfo.io) bem-sucedida!');
+                        setTemporalData();
+                        updateLocationData();
+                        return;
+                    }
+                }
+            } catch (error1) {
+                console.warn('⚠️ API 1 (ipinfo.io) falhou:', error1.message);
+            }
+
+            // ESTRATÉGIA 2: API GEOGS.IO (Backup robusto)
+            try {
+                console.log('🔄 Tentando API 2: geogs.io...');
+                const response2 = await fetch('https://api.geogs.io/json', {
+                    timeout: 5000
+                });
+                
+                if (response2.ok) {
+                    const data2 = await response2.json();
+                    
+                    // Adaptar formato da geogs.io para o nosso padrão
+                    const adaptedData = {
+                        city: data2.city,
+                        region: data2.region_code || data2.region,
+                        latitude: data2.latitude,
+                        longitude: data2.longitude
+                    };
+                    
+                    if (applyLocationData(adaptedData, 'geogs.io')) {
+                        console.log('✅ API 2 (geogs.io) bem-sucedida!');
+                        setTemporalData();
+                        updateLocationData();
+                        return;
+                    }
+                }
+            } catch (error2) {
+                console.warn('⚠️ API 2 (geogs.io) falhou:', error2.message);
+            }
+
+            // ESTRATÉGIA 3: FALLBACK PADRÃO INTELIGENTE
+            console.warn('❌ Todas as APIs falharam, usando fallback padrão...');
+            
+            userData.city = 'Ipatinga';
+            userData.state = 'MG';
+            userData.greeting = 'Uai Sô';
+            userData.food = 'pão de queijo';
+            userData.demonym = 'mineiro';
+            userData.distance = 16;
+            userData.travelTime = '12min';
+            temporalData.climaRegional = getClimaRegional('sua cidade');
+            
+            console.log('🔧 Fallback padrão aplicado:', userData);
+            
+            setTemporalData();
+            updateLocationData();
+            
+            console.log('📊 Sistema de geolocalização dupla finalizado!');
+        }
+
+        // === CARD 2: SEQUÊNCIA COM SCROLL SINCRONIZADO CIRÚRGICO ===
+        function executeCard2PremiumSequence() {
+            console.log('🎬 Iniciando sequência premium Card 2 com timings cirúrgicos...');
+            
+            const section = document.getElementById('messageSection');
+            section.classList.add('active');
+            
+            // ETAPA 1: SEGURAR NO HEADER POR 12 SEGUNDOS (AUMENTADO)
+            setTimeout(() => {
+                console.log('📍 ETAPA 1: Segurando header da mensagem por 12s (AUMENTADO)');
+                
+                // TTS OTIMIZADO - CONEXÃO INTELIGENTE mantendo timing perfeito
+                speak(`Uai Sô, ${userData.name}! É ${temporalData.dayOfWeek}, ${temporalData.dayPersonalization}! ${temporalData.formattedDate}, ${temporalData.timeOfDay}, ${temporalData.specificTime}! Olha só... uma mensagem especial cruzou o Brasil inteiro para chegar até você!`, 
+                      "🎯 Mensagem especial chegando...");
+                
+                // ETAPA 2: SCROLL PARA MAPA POR 7 SEGUNDOS (após 12s)
+                setTimeout(() => {
+                    console.log('📍 ETAPA 2: Scroll para mapa da jornada - segura por 7s');
+                    
+                    const mapContainer = document.querySelector('.map-container');
+                    if (mapContainer) {
+                        smoothScrollToElement(mapContainer, 'center');
+                    }
+                    
+                    // TTS INTELIGENTE - Foco na jornada emocional
+                    speak(`Jornada da mensagem: saiu de Timóteo-MG, viajou ${userData.distance} quilômetros, atravessou ${userData.travelTime} de estrada, e chegou aí em ${userData.city}-${userData.state} em apenas 0.2 segundos online! Essa é a magia da tecnologia, ${userData.name}!`, 
+                          "🗺️ Calculando jornada da mensagem...");
+                    
+                    // ETAPA 3: SCROLL PARA INFO CONTEXTUAL POR 3 SEGUNDOS (após 7s)
+                    setTimeout(() => {
+                        console.log('📍 ETAPA 3: Scroll para contextual final - segura por 3s');
+                        
+                        const contextualInfo = document.querySelector('.contextual-info-premium');
+                        if (contextualInfo) {
+                            smoothScrollToElement(contextualInfo, 'center');
+                        }
+                        
+                        // TTS CONEXÃO EMOCIONAL FINAL - Preparando transição perfeita
+                        speak(`É terra do ${userData.food}, né ${userData.name}! ${userData.greeting}, você é especial! E agora... vou te mostrar algo que vai mudar sua forma de ver a internet para sempre!`, 
+                              "🎯 Preparando revelação especial...");
+                        
+                        // ETAPA 4: TRANSIÇÃO PARA PRÓXIMO CARD (após 3s)
+                        setTimeout(() => {
+                            console.log('📍 ETAPA 4: Transição suave para próximo card');
+                            console.log('✅ Card 2 sequência cirúrgica completa! Iniciando próximas seções...');
+                            
+                            loadLazySections();
+                            iniciarProximasSecoes();
+                            
+                        }, 3000); // 3 segundos na contextual
+                        
+                    }, 7000); // 7 segundos no mapa
+                    
+                }, 12000); // 12 segundos no header (AUMENTADO de 6s para 12s)
+                
+            }, 1000); // 1s para ativar
+        }
+
+        function iniciarProximasSecoes() {
+            // Revelação com 3 ETAPAS CIRÚRGICAS DE SCROLL
+            showSection('revelacaoSection', () => {
+                currentStep = 2;
+                
+                // ===== ETAPA 1: SCROLL NO TOPO + SEGURA (Header) =====
+                const revelacaoHeader = document.querySelector('.revelacao-header');
+                if (revelacaoHeader) {
+                    revelacaoHeader.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                
+                setTimeout(() => {
+                    console.log('🎬 ETAPA 1: Header + introdução (SCROLL PAUSADO)');
+                    
+                    // TTS ETAPA 1 - Header + introdução
+                    speak(`Esse site fala com você, ${userData.name}. Ele não grita. Ele CONVERSA, GUIA e EMOCIONA. Agora respira e imagina vender isso para`, 
+                          "✨ Revelando conceito...");
+                    
+                    // ===== ETAPA 2: SCROLL PARA NICHOS + SEGURA =====
+                    setTimeout(() => {
+                        console.log('🎬 ETAPA 2: Scroll para nichos + valores falados (SCROLL PAUSADO)');
+                        
+                        // Scroll para área dos nichos
+                        const nichosGrid = document.querySelector('.nichos-grid-premium');
+                        if (nichosGrid) {
+                            smoothScrollToElement(nichosGrid, 'center');
+                        }
+                        
+                        // Animação dos 6 nichos
+                        animateAllNichosSequential();
+                        
+                        // TTS ETAPA 2 - Nichos com valores falados
+                        speak(`Padaria de quinhentos a oitocentos reais, consultório médico de mil e duzentos a dois mil reais, escola de oitocentos a mil e quinhentos reais, advocacia de mil a mil e oitocentos reais, contabilidade de setecentos a mil e duzentos reais, clínica de novecentos a mil e seiscentos reais.`, 
+                              "🎯 Revelando nichos e valores...");
+                        
+                        // ===== ETAPA 3: SCROLL PARA CÁLCULO + CONCLUSÃO =====
+                        setTimeout(() => {
+                            console.log('🎬 ETAPA 3: Scroll para cálculo + conclusão final');
+                            
+                            // Scroll para cálculo e conclusão
+                            const revelacaoImpacto = document.querySelector('.revelacao-impacto');
+                            if (revelacaoImpacto) {
+                                smoothScrollToElement(revelacaoImpacto, 'center');
+                            }
+                            
+                            // Animação do cálculo e conclusão
+                            animateCalculoAndConclusion();
+                            
+                            // TTS ETAPA 3 - Cálculo + conclusão
+                            speak(`Se você fechar apenas um contrato por semana de oitocentos reais, são três mil e duzentos por mês. E se forem dois contratos? Seis mil e quatrocentos por mês! Isso não é site comum. É presença digital com alma que FATURA.`, 
+                                  "💰 Calculando potencial de faturamento...");
+                            
+                            // ===== TRANSIÇÃO PARA PRÓXIMA SEÇÃO =====
+                            setTimeout(() => {
+                                console.log('🎬 TRANSIÇÃO: Para seção de proposta');
+                                
+                                showSection('proposalSection', () => {
+                                    currentStep = 3;
+                                    speak(`${userData.name}, agora vou te provar que com um contrato você coloca de quinhentos a dois mil reais no bolso, acredita? Olha esse vídeo de trinta segundos que fiz para você!`, 
+                                          "🎯 Revelando proposta de ganhos...");
+                                    
+                                    setupVideoAutoAdvance();
+                                    startVideoProgressBar();
+                                });
+                            }, 12000); // 12s para cálculo + conclusão
+                            
+                        }, 14000); // 14s para nichos + valores
+                        
+                    }, 8000); // 8s para header + introdução
+                    
+                }, 1500); // 1.5s para iniciar
+            });
+        }
+
+        // ANIMAÇÃO SEQUENCIAL DE TODOS OS 6 NICHOS
+        function animateAllNichosSequential() {
+            const allNichos = document.querySelectorAll('.nicho-item-premium');
+            
+            // Reset inicial - todos invisíveis
+            allNichos.forEach(nicho => {
+                nicho.style.opacity = '0';
+                nicho.style.transform = 'translateY(40px) scale(0.8)';
+            });
+            
+            // Animação sequencial suave dos 6 nichos
+            const timings = [500, 900, 1300, 1700, 2100, 2500]; // Timings espaçados
+            
+            allNichos.forEach((nicho, i) => {
+                if (i < 6) { // Garantir apenas 6 nichos
+                    setTimeout(() => {
+                        // Transição ultra suave
+                        nicho.style.transition = 'all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+                        nicho.style.opacity = '1';
+                        nicho.style.transform = 'translateY(0) scale(1)';
+                        
+                        // Efeito de destaque sutil
+                        setTimeout(() => {
+                            nicho.style.boxShadow = 'var(--shadow-glow)';
+                            nicho.style.borderColor = 'rgba(212, 175, 55, 0.8)';
+                            
+                            // Volta ao normal
+                            setTimeout(() => {
+                                nicho.style.boxShadow = 'var(--shadow-card)';
+                                nicho.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+                            }, 1000);
+                        }, 500);
+                    }, timings[i]);
+                }
+            });
+        }
+
+        // ANIMAÇÃO DO CÁLCULO E CONCLUSÃO
+        function animateCalculoAndConclusion() {
+            // Anima cálculo de impacto
+            setTimeout(() => {
+                const impacto = document.querySelector('.revelacao-impacto');
+                if (impacto) {
+                    impacto.style.opacity = '0';
+                    impacto.style.transform = 'translateY(60px) scale(0.85)';
+                    impacto.offsetHeight;
+                    
+                    impacto.style.transition = 'all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+                    impacto.style.opacity = '1';
+                    impacto.style.transform = 'translateY(0) scale(1)';
+                    
+                    // Efeito especial verde intenso
+                    setTimeout(() => {
+                        impacto.style.boxShadow = '0 0 50px rgba(16, 185, 129, 0.7), 0 0 100px rgba(16, 185, 129, 0.3)';
+                        impacto.style.borderColor = 'rgba(16, 185, 129, 0.9)';
+                        
+                        setTimeout(() => {
+                            impacto.style.boxShadow = 'var(--shadow-card)';
+                            impacto.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+                        }, 2000);
+                    }, 800);
+                }
+            }, 1000);
+
+            // Anima conclusão final - EFEITO ESPECIAL
+            setTimeout(() => {
+                const final = document.querySelector('.revelacao-final');
+                if (final) {
+                    final.style.opacity = '0';
+                    final.style.transform = 'translateY(50px) scale(0.85)';
+                    final.offsetHeight;
+                    
+                    final.style.transition = 'all 1.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+                    final.style.opacity = '1';
+                    final.style.transform = 'translateY(0) scale(1)';
+                    
+                    // Efeito dourado ÉPICO na conclusão
+                    setTimeout(() => {
+                        final.style.boxShadow = '0 0 40px rgba(212, 175, 55, 0.8), 0 0 80px rgba(212, 175, 55, 0.4)';
+                        final.style.borderColor = 'rgba(212, 175, 55, 1)';
+                        final.style.background = 'rgba(212, 175, 55, 0.25)';
+                        
+                        setTimeout(() => {
+                            final.style.boxShadow = 'var(--shadow-card)';
+                            final.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+                            final.style.background = 'rgba(212, 175, 55, 0.15)';
+                        }, 2500);
+                    }, 1000);
+                }
+            }, 3000);
+        }
+
+        // === LAZY LOADING COM 6 NICHOS ===
+        const LAZY_SECTIONS = `
+        <section class="section revelacao-section" id="revelacaoSection" role="region">
+            <div class="revelacao-header">
+                <div class="revelacao-icon">✨</div>
+                <h2 class="revelacao-title">
+                    Esse site fala com você, <span id="userName3">${userData.name}</span>.
+                </h2>
+                <p class="revelacao-subtitle">Ele não grita. Ele CONVERSA, GUIA e EMOCIONA.</p>
+            </div>
+            
+            <div class="revelacao-content">
+                <p class="revelacao-main">
+                    Agora… respira e imagina <strong>vender isso</strong> para:
+                </p>
+                
+                <div class="nichos-grid-premium">
+                    <div class="nicho-item-premium">
+                        <div class="nicho-header">
+                            <span class="nicho-emoji">🥖</span>
+                            <span class="nicho-text">Padaria</span>
+                        </div>
+                    </div>
+                    <div class="nicho-item-premium">
+                        <div class="nicho-header">
+                            <span class="nicho-emoji">🏥</span>
+                            <span class="nicho-text">Consultório médico</span>
+                        </div>
+                    </div>
+                    <div class="nicho-item-premium">
+                        <div class="nicho-header">
+                            <span class="nicho-emoji">🎓</span>
+                            <span class="nicho-text">Escola</span>
+                        </div>
+                    </div>
+                    <div class="nicho-item-premium">
+                        <div class="nicho-header">
+                            <span class="nicho-emoji">⚖️</span>
+                            <span class="nicho-text">Advocacia</span>
+                        </div>
+                    </div>
+                    <div class="nicho-item-premium">
+                        <div class="nicho-header">
+                            <span class="nicho-emoji">📊</span>
+                            <span class="nicho-text">Contabilidade</span>
+                        </div>
+                    </div>
+                    <div class="nicho-item-premium">
+                        <div class="nicho-header">
+                            <span class="nicho-emoji">🏥</span>
+                            <span class="nicho-text">Clínica</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="revelacao-impacto">
+                    <div class="impacto-calculo">
+                        <div class="calculo-titulo">💰 Cálculo de Impacto</div>
+                        <div class="calculo-exemplo">Se você fechar apenas <strong>1 contrato por semana</strong>:</div>
+                        <div class="calculo-exemplo">1 x R$ 800 x 4 semanas = <span class="valor-destaque">R$ 3.200/mês</span></div>
+                        <div class="calculo-exemplo">E se forem 2 contratos? = <span class="valor-destaque">R$ 6.400/mês</span></div>
+                    </div>
+                </div>
+                
+                <div class="revelacao-final">
+                    <p class="revelacao-impact">
+                        Isso não é <span class="destaque-comum">site comum</span>
+                    </p>
+                    <p class="revelacao-value">
+                        É <strong>presença digital</strong> com <span class="destaque-alma">alma que FATURA</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="proposalSection" role="region">
+            <p style="font-size:18px;font-weight:700;margin-bottom:20px;text-align:center;line-height:1.4;color:var(--color-text-primary)">
+                <span id="userName4">Nome</span>, agora vou te provar que com 1 contrato você coloca de <strong>quinhentos a dois mil reais</strong> no bolso, acredita?
+            </p>
+            <div style="background:var(--gradient-gold);color:var(--color-bg);padding:15px 20px;border-radius:15px;font-weight:800;margin:15px 0;text-align:center;line-height:1.3">
+                Olha esse vídeo de <strong>30 segundos</strong> que fiz para você!
+            </div>
+            <div style="text-align:center">
+                <div class="demo-video" id="demoVideo" onclick="playVideo()" role="button" aria-label="Reproduzir vídeo" tabindex="0">
+                    📱
+                    <div class="play-btn" id="playBtn">▶️</div>
+                </div>
+                <p style="margin-top:15px;font-weight:600;color:var(--color-text-secondary)">
+                    Demonstração ao vivo - Clique para assistir
+                </p>
+                <div id="videoProgress" style="width:100%;height:6px;background:rgba(26,32,53,0.6);border-radius:3px;margin:15px 0;overflow:hidden;box-shadow:inset 0 2px 4px rgba(0,0,0,0.3)">
+                    <div id="videoProgressBar" style="height:100%;background:var(--gradient-gold);width:0%;transition:width 0.5s ease;border-radius:3px;box-shadow:0 0 10px rgba(212,175,55,0.6)"></div>
+                </div>
+                <p id="videoTimer" style="text-align:center;font-size:12px;color:var(--color-text-secondary);font-weight:600">
+                    ⏱️ Continua automaticamente em 20s se não assistir
+                </p>
+            </div>
+        </section>
+
+        <section class="section mental-test" id="mentalTest" role="region">
+            <h2 style="font-size:18px;font-weight:700;margin-bottom:25px;color:var(--color-text-primary)">
+                🧠 <span id="userName7">Nome</span>, vou te provar que sua mente não quer que você faça dinheiro, duvida?
+            </h2>
+            <div class="test-items-three" id="testItems" role="group">
+                <div class="test-item" id="testBurger" role="button" tabindex="0">
+                    <span class="test-icon">🍔</span>
+                    <span style="color:var(--color-text-primary)">Pense num HAMBÚRGUER</span>
+                </div>
+                <div class="test-item" id="testDog" role="button" tabindex="0">
+                    <span class="test-icon">🐶</span>
+                    <span style="color:var(--color-text-primary)">Pense num CACHORRO</span>
+                </div>
+                <div class="test-item" id="testPizza" role="button" tabindex="0">
+                    <span class="test-icon">🍕</span>
+                    <span style="color:var(--color-text-primary)">Então, NÃO pense em uma PIZZA</span>
+                </div>
+            </div>
+            <div class="revelation" id="revelation" role="alert">
+                <h3 style="color:var(--error-red);margin-bottom:15px;font-size:18px">
+                    🤯 <span id="userName8">Nome</span>, Por que você pensou mesmo eu pedindo para NÃO pensar?
+                </h3>
+                <p style="font-weight:600;line-height:1.5;font-size:15px;color:var(--color-text-primary)">
+                    <strong>Sua mente não quer que você cresça! Ela não ler a palavra NÃO! Vai tentar te enganar para você não FAZER DINHEIRO e NÃO tomar uma decisão... Provei AQUI, <span id="greetingOnly2">uai</span> sô!</strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="section offer-section" id="offerSection" role="region">
+            <h2 style="margin-bottom:20px;font-size:19px;color:var(--color-text-primary)">
+                🎯 Relaxa, <span id="userName10">Nome</span>!<br>Eu tiro essa sua resistência mental AGORA!
+            </h2>
+            <div class="price-animation-container">
+                <div id="originalPrice">
+                    <span class="price-label">Valor normal:</span>
+                    <span class="price-value">R$ 1.997,00</span>
+                    <div id="strikethrough"></div>
+                </div>
+            </div>
+            <div class="offer-price" id="specialPrice" style="opacity:0;transform:scale(0.5);transition:all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);">Mas hoje é só R$ 47,00!</div>
+            <div class="offer-savings">
+                Economia de R$ 1.953,00!
+            </div>
+            <div class="reflection-question">
+                💭 Quanto poderia estar fazendo por semana ou mês a mais?
+            </div>
+            <div style="background:rgba(239,68,68,0.15);backdrop-filter:blur(20px);border:3px solid var(--error-red);border-radius:18px;padding:15px;margin:20px 0;box-shadow:var(--shadow-luxury)" role="alert">
+                <p style="color:var(--error-red);font-weight:700;font-size:15px">
+                    ⚡ Acaba HOJE para <span id="userCity4">sua cidade</span>!<br>Preço sobe a cada semana!
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="checkoutSection" role="form">
+            <h2 style="font-size:20px;font-weight:900;color:var(--color-accent);text-align:center;margin-bottom:25px">
+                💳 Finalizar Pedido - R$ 47,00
+            </h2>
+            <div class="form-group">
+                <label class="form-label" for="userEmail">Seu melhor email:</label>
+                <input type="email" class="form-input" id="userEmail" placeholder="seu@email.com" autocomplete="email" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="userWhatsapp">WhatsApp para avisos VIP:</label>
+                <input type="tel" class="form-input" id="userWhatsapp" placeholder="(11) 99999-9999" autocomplete="tel" aria-required="true">
+            </div>
+            <button class="btn premium-glass-btn" onclick="finalizeOrder()" type="button">
+                🚀 CONFIRMAR PEDIDO - R$ 47,00 🚀
+            </button>
+        </section>
+
+        <section class="section offer-section" id="whatsappSection" role="region">
+            <h2 style="font-size:17px;margin-bottom:20px;font-weight:700;color:var(--color-text-primary)">
+                Perfeito, <span id="userName11">Nome</span>! Te vejo do outro lado!
+            </h2>
+            <button class="whatsapp-btn" onclick="openWhatsApp()" type="button">
+                📱 Abrir WhatsApp e Receber Acesso
+            </button>
+        </section>
+        `;
+
+        // === ADVANCED SCROLL TRACKING ===
+        function initScrollTracking() {
+            let ticking = false;
+            
+            function updateScrollDepth() {
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                scrollDepth = Math.round((scrollTop / docHeight) * 100);
+                
+                userEngagement = Math.max(userEngagement, scrollDepth);
+                ticking = false;
+            }
+            
+            function requestScrollUpdate() {
+                if (!ticking) {
+                    requestAnimationFrame(updateScrollDepth);
+                    ticking = true;
+                }
+            }
+            
+            window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+        }
+
+        // === TIME TRACKING ULTRA PRECISE ===
+        function initTimeTracking() {
+            const startTime = Date.now();
+            
+            setInterval(() => {
+                timeOnPage = Date.now() - startTime;
+                
+                if (timeOnPage >= TIMING.priceReveal && floatingCTAState === 'discrete') {
+                    revealFloatingPrice();
+                }
+                
+                if (timeOnPage >= TIMING.urgencyMode && floatingCTAState !== 'urgent') {
+                    activateUrgencyMode();
+                }
+                
+            }, 1000);
+        }
+
+        // === FLOATING CTA SYSTEM ===
+        function showFloatingCTA() {
+            if (floatingCTAState !== 'hidden') return;
+            
+            floatingCTAState = 'discrete';
+            const floating = document.getElementById('floatingCTA');
+            const icon = document.getElementById('floatingIcon');
+            const text = document.getElementById('floatingText');
+            
+            icon.textContent = '⚡';
+            text.textContent = 'Descobrir';
+            
+            floating.classList.add('active');
+            
+            setTimeout(() => {
+                floating.style.animation = 'luxuryFloatPulse 4s ease-in-out infinite';
+            }, TIMING.transitionDeep);
+            
+            console.log('🟡 Floating CTA: DISCRETE mode activated');
+        }
+
+        function revealFloatingPrice() {
+            if (floatingCTAState !== 'discrete') return;
+            
+            floatingCTAState = 'revealed';
+            const btn = document.getElementById('floatingBtn');
+            const icon = document.getElementById('floatingIcon');
+            const text = document.getElementById('floatingText');
+            
+            btn.classList.add('price-revealed');
+            icon.textContent = '💎';
+            text.textContent = 'R$ 47,00';
+            
+            btn.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                btn.style.transform = 'scale(1)';
+            }, 300);
+            
+            console.log('🔶 Floating CTA: PRICE REVEALED');
+        }
+
+        function activateUrgencyMode() {
+            if (floatingCTAState === 'urgent') return;
+            
+            floatingCTAState = 'urgent';
+            const btn = document.getElementById('floatingBtn');
+            const icon = document.getElementById('floatingIcon');
+            const text = document.getElementById('floatingText');
+            
+            btn.classList.add('urgent');
+            icon.textContent = '🔥';
+            text.textContent = 'Últimas vagas!';
+            
+            setTimeout(() => {
+                btn.style.animation = 'urgentLuxuryShake 0.5s ease-in-out 3, luxuryFloatPulse 2s ease-in-out infinite';
+            }, 100);
+            
+            console.log('🔴 Floating CTA: URGENCY MODE activated');
+        }
+
+        function handleFloatingClick() {
+            console.log(`💎 Floating CTA clicked - State: ${floatingCTAState}, Engagement: ${userEngagement}%, Time: ${Math.round(timeOnPage/1000)}s`);
+            
+            scrollToOffer();
+            
+            if (notificationState === 'shown') {
+                closeNotification();
+            }
+        }
+
+        // === SMART NOTIFICATION SYSTEM ===
+        function showSmartNotification() {
+            if (notificationState !== 'hidden') return;
+            
+            notificationState = 'shown';
+            const notification = document.getElementById('smartNotification');
+            const city = document.getElementById('notifCity');
+            const title = document.getElementById('notifTitle');
+            const body = document.getElementById('notifBody');
+            const icon = document.getElementById('notifIcon');
+            
+            if (userEngagement < 30) {
+                icon.textContent = '👀';
+                title.textContent = 'Ainda explorando?';
+                body.innerHTML = `Ei, pessoal de <span id="notifCity">${userData.city}</span>! Esta oferta especial termina hoje às 23:59h.`;
+            } else if (userEngagement < 60) {
+                icon.textContent = '🤔';
+                title.textContent = 'Pensando na oferta?';
+                body.innerHTML = `<span id="notifCity">${userData.city}</span> tem só mais algumas vagas hoje! Garante a sua por R$ 47.`;
+            } else {
+                icon.textContent = '⏰';
+                title.textContent = 'Quase decidindo?';
+                body.innerHTML = `Última chamada para <span id="notifCity">${userData.city}</span>! Restam poucas horas.`;
+            }
+            
+            city.textContent = userData.city;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                if (notificationState === 'shown') {
+                    closeNotification();
+                }
+            }, TIMING.notificationShow);
+            
+            console.log(`🔔 Smart Notification shown - Engagement: ${userEngagement}%`);
+        }
+
+        function closeNotification() {
+            notificationState = 'dismissed';
+            const notification = document.getElementById('smartNotification');
+            notification.classList.remove('show');
+            
+            console.log('❌ Notification dismissed');
+        }
+
+        function scrollToOffer() {
+            const offerSection = document.getElementById('offerSection');
+            if (offerSection) {
+                offerSection.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center',
+                    inline: 'nearest'
+                });
+                
+                setTimeout(() => {
+                    offerSection.style.transform = 'scale(1.02)';
+                    offerSection.style.boxShadow = '0 20px 60px rgba(212, 175, 55, 0.4)';
+                    
+                    setTimeout(() => {
+                        offerSection.style.transform = 'scale(1)';
+                        offerSection.style.boxShadow = 'var(--shadow-card)';
+                    }, 600);
+                }, TIMING.scrollFocus);
+                
+                console.log('🎯 Scrolled to offer with focus enhancement');
+            }
+        }
+
+        // === SMOOTH SCROLL FUNCTION ===
+        function smoothScrollToElement(element, block = 'center') {
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: block,
+                    inline: 'nearest'
+                });
+            }
+        }
+
+        // Função para ativar áudio no navegador
+        function ativarSistemaAudio() {
+            if (!sistemaAudioAtivado) {
+                speechSynthesis.resume();
+                sistemaAudioAtivado = true;
+                console.log('🔊 Sistema de áudio ativado');
+            }
+        }
+
+        // Função para obter melhor voz brasileira
+        function obterVozBrasileira() {
+            const vozes = speechSynthesis.getVoices();
+            
+            const vozPrioritaria = vozes.find(v => 
+                v.lang === "pt-BR" && (
+                    v.name.includes('Google') ||
+                    v.name.includes('Microsoft') ||
+                    v.name.includes('Luciana') ||
+                    v.name.includes('Daniel')
+                )
+            );
+            
+            if (vozPrioritaria) return vozPrioritaria;
+            
+            const vozBR = vozes.find(v => v.lang === "pt-BR");
+            if (vozBR) return vozBR;
+            
+            return vozes.find(v => 
+                v.name.includes('Portuguese') || 
+                v.name.includes('Brazil')
+            );
+        }
+
+        // Sistema de TTS otimizado para Card 1 COM EFEITOS DE AVATAR
+        function falarCard1(texto, callback) {
+            if (!('speechSynthesis' in window)) {
+                console.warn('⚠️ TTS não suportado');
+                if (callback) callback();
+                return;
+            }
+
+            speechSynthesis.cancel();
+            
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.lang = "pt-BR";
+            fala.rate = 1.0;
+            fala.pitch = 1.1;
+            fala.volume = 1.0;
+            
+            if (vozBrasileiraCard1) {
+                fala.voice = vozBrasileiraCard1;
+            }
+            
+            showBubble(`🎤 ${texto}`);
+            
+            fala.onstart = () => {
+                console.log('🗣️ Avatar falando:', texto);
+                startAvatarSpeaking();
+            };
+            
+            fala.onend = () => {
+                stopAvatarSpeaking();
+                setTimeout(() => {
+                    completeBubble();
+                    if (callback) callback();
+                }, 500);
+                console.log('✅ Avatar terminou de falar');
+            };
+            
+            fala.onerror = (error) => {
+                console.warn('❌ TTS Error:', error);
+                stopAvatarSpeaking();
+                hideBubble();
+                if (callback) callback();
+            };
+            
+            setTimeout(() => {
+                speechSynthesis.speak(fala);
+            }, 100);
+        }
+
+        // === PROGRESS ===
+        function updateProgress(percentage) {
+            const progress = document.getElementById('hypnoticProgress');
+            if (progress) {
+                progress.style.width = `${percentage}%`;
+                if (percentage >= 100) {
+                    setTimeout(() => {
+                        document.getElementById('hypnoticLoader').style.display = 'none';
+                    }, 500);
+                }
+            }
+        }
+
+        // === ARIA ANNOUNCEMENTS ===
+        function announce(text) {
+            const announcements = document.getElementById('aria-announcements');
+            if (announcements) {
+                announcements.textContent = text;
+                setTimeout(() => announcements.textContent = '', 3000);
+            }
+        }
+
+        // === SPEECH SYSTEM ===
+        async function speak(text, bubbleText = '') {
+            speechQueue.push({ text, bubbleText });
+            if (!isSpeaking) processNextSpeech();
+        }
+
+        async function processNextSpeech() {
+            if (speechQueue.length === 0) {
+                isSpeaking = false;
+                return;
+            }
+            
+            isSpeaking = true;
+            const { text, bubbleText } = speechQueue.shift();
+            
+            const progressValue = Math.min(95, (currentStep * 12) + Math.random() * 8);
+            updateProgress(progressValue);
+            
+            try {
+                await performTTS(text, bubbleText);
+            } catch (error) {
+                console.warn('TTS Error:', error);
+            }
+            
+            setTimeout(() => processNextSpeech(), 250);
+        }
+
+        async function performTTS(text, displayText) {
+            if (!('speechSynthesis' in window)) return Promise.resolve();
+            
+            lastSpokenText = text;
+            showBubble(displayText || text.substring(0, 45) + '...');
+            
+            return new Promise((resolve, reject) => {
+                try {
+                    speechSynthesis.cancel();
+                    
+                    const utterance = new SpeechSynthesisUtterance(cleanTextForSpeech(text));
+                    const voices = speechSynthesis.getVoices();
+                    const brazilianVoice = voices.find(voice => 
+                        voice.lang.includes('pt-BR') || voice.name.includes('Brazil')
+                    );
+                    
+                    if (brazilianVoice) utterance.voice = brazilianVoice;
+                    utterance.rate = 1.1;
+                    utterance.pitch = 1.0;
+                    utterance.volume = 1.0;
+                    
+                    utterance.onend = () => {
+                        setTimeout(() => {
+                            completeBubble();
+                            resolve();
+                        }, 500);
+                    };
+                    
+                    utterance.onerror = (error) => {
+                        hideBubble();
+                        reject(new Error(error.error));
+                    };
+                    
+                    speechSynthesis.speak(utterance);
+                } catch (error) {
+                    hideBubble();
+                    reject(error);
+                }
+            });
+        }
+
+        function cleanTextForSpeech(text) {
+            return text
+                .replace(/[🌍🎯❓💰📱🎁💡📖🎤✨⚡🔥💎👑🏆💳📊🗺️🎙️📝👁️🍔🐶🍕🧠🤯💭]/g, '')
+                .replace(/\*\*/g, '')
+                .replace(/\b47\b/g, 'quarenta e sete')
+                .replace(/R\$\s*(\d+)/g, '$1 reais')
+                .replace(/\buai\b/gi, 'uái')
+                .replace(/sô/gi, 'sô')
+                .trim();
+        }
+
+        // === BUBBLE SYSTEM ===
+        function showBubble(text) {
+            const bubble = document.getElementById('chatBubble');
+            const bubbleText = document.getElementById('bubbleText');
+            const micIcon = document.getElementById('micIcon');
+            
+            if (bubble && bubbleText && micIcon) {
+                bubbleText.textContent = text;
+                micIcon.textContent = '🎤';
+                bubble.classList.remove('completed');
+                bubble.classList.add('active');
+                announce(`Nova mensagem: ${text}`);
+            }
+        }
+
+        function completeBubble() {
+            const bubble = document.getElementById('chatBubble');
+            const micIcon = document.getElementById('micIcon');
+            
+            if (bubble && micIcon) {
+                bubble.classList.add('completed');
+                micIcon.classList.add('completed');
+                micIcon.textContent = '✓';
+                setTimeout(hideBubble, 2000);
+            }
+        }
+
+        function hideBubble() {
+            const bubble = document.getElementById('chatBubble');
+            if (bubble) {
+                bubble.classList.remove('active', 'completed');
+            }
+        }
+
+        function replayAudio() {
+            if (lastSpokenText) {
+                speechSynthesis.cancel();
+                speechQueue = [];
+                isSpeaking = false;
+                speak(lastSpokenText);
+                announce('Repetindo mensagem de áudio');
+            }
+        }
+
+        // === TEMPORAL DATA ===
+        let temporalData = {
+            dayOfWeek: '',
+            dayPersonalization: '',
+            formattedDate: '',
+            specificTime: '',
+            timeOfDay: ''
+        };
+
+        // === TEMPORAL FUNCTIONS ===
+        function setTemporalData() {
+            const now = new Date();
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            const dayIndex = now.getDay();
+            
+            const dayPersonalizations = {
+                0: 'Domingão de paz! Mas a mensagem segue falando por você 24h',
+                1: 'Segundou com energia! A semana tá só começando e você já pensando em inovar', 
+                2: 'Terçou produtiva! Sua presença digital merece um site que CONVERSA de verdade',
+                3: 'Quartou com foco! Meio da semana e sua gíria regional já ativada aqui',
+                4: 'Quinta inspiradora! O fim de semana já escuta sua automação trabalhando',
+                5: 'Sextou com voz e sotaque! Sua ideia não tira folga, né não?',
+                6: 'Sabadou gostoso! E nosso site falante segue emocionando quem chega'
+            };
+            
+            const dayNames = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+            
+            temporalData.dayOfWeek = dayNames[dayIndex];
+            temporalData.dayPersonalization = dayPersonalizations[dayIndex];
+            temporalData.formattedDate = formatDate(now);
+            temporalData.specificTime = `${hour} horas e ${minute} minutos`;
+            temporalData.timeOfDay = getTimeOfDayGreeting(hour);
+            
+            temporalData.climaRegional = '';
+            temporalData.elementoSurpresa = getElementoSurpresa();
+        }
+
+        function getTimeGreeting(hour, regional) {
+            if (hour <= 5) return `É madrugada, ${regional.toLowerCase()}`;
+            if (hour <= 11) return `É bom dia, ${regional.toLowerCase()}`;
+            if (hour <= 17) return `É tardezinha, ${regional.toLowerCase()}`;
+            if (hour <= 23) return `É boa noite, ${regional.toLowerCase()}`;
+            return `É tardezinha, ${regional.toLowerCase()}`;
+        }
+
+        function formatDate(date) {
+            const months = [
+                'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+                'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+            ];
+            
+            const day = date.getDate();
+            const month = months[date.getMonth()];
+            
+            return `${day} de ${month}`;
+        }
+
+        function getTimeOfDayGreeting(hour) {
+            if (hour <= 5) return 'boa madrugada';
+            if (hour <= 11) return 'bom dia';
+            if (hour <= 17) return 'boa tarde';
+            return 'boa noite';
+        }
+
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
+                     Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+                     Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        function estimateTravelTime(distanceKm) {
+            const hours = distanceKm / 80;
+            return hours < 1 ? `${Math.round(hours * 60)}min` : 
+                   hours < 10 ? `${Math.round(hours * 10) / 10}h` : 
+                   `${Math.round(hours)}h`;
+        }
+
+        function getClimaRegional(cidade) {
+            const frasesClima = [
+                `Tempo bom aí em ${cidade} para inovar!`,
+                `Clima perfeito em ${cidade} para criar algo novo!`,
+                `Sol ou chuva em ${cidade}, sua ideia sempre brilha!`,
+                `Que tempo gostoso em ${cidade} para empreender!`,
+                `Energia boa rolando em ${cidade} hoje!`,
+                `Vibe criativa no ar de ${cidade}!`
+            ];
+            return frasesClima[Math.floor(Math.random() * frasesClima.length)];
+        }
+
+        function getElementoSurpresa() {
+            const dispositivoAtual = /Mobi|Android/i.test(navigator.userAgent) ? 'celular' : 'computador';
+            const navegadorAtual = navigator.userAgent.includes('Chrome') ? 'Chrome' : 
+                                 navigator.userAgent.includes('Firefox') ? 'Firefox' : 
+                                 navigator.userAgent.includes('Safari') ? 'Safari' : 'navegador';
+            
+            const elementosSurpresa = [
+                `PS: Seu ${navegadorAtual} acabou de sussurrar que você tem bom gosto para tecnologia`,
+                `PS: Seu ${dispositivoAtual} confirmou: você tem olho para inovação`,
+                `PS: Sua conexão de internet aprova essa decisão inteligente`,
+                `PS: Seu ${dispositivoAtual} acabou de piscar aprovando sua visita aqui`,
+                `PS: Detectamos: você tem DNA de empreendedor digital`,
+                `PS: Seu histórico de navegação mostra: você é diferenciado`,
+                `PS: Seu ${dispositivoAtual} reconhece: você pensa fora da caixa`
+            ];
+            return elementosSurpresa[Math.floor(Math.random() * elementosSurpresa.length)];
+        }
+
+        function updateLocationData() {
+            const elements = {
+                'destinationLabel': `${userData.city}-${userData.state}`,
+                'distanceMain': `${userData.distance} quilômetros`,
+                'distance1': userData.distance,
+                'distance2': userData.distance,
+                'travelTime': userData.travelTime,
+                'greetingOnly': userData.greeting,
+                'food1': userData.food,
+                'userCity1': userData.city,
+                'userGreeting': userData.greeting,
+                'dayOfWeek': temporalData.dayOfWeek,
+                'dayPersonalization': temporalData.dayPersonalization,
+                'formattedDate': temporalData.formattedDate,
+                'timeOfDay': temporalData.timeOfDay,
+                'specificTime': temporalData.specificTime,
+                'climaRegional': temporalData.climaRegional,
+                'elementoSurpresa': temporalData.elementoSurpresa
+            };
+            
+            Object.keys(elements).forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.textContent = elements[id];
+            });
+        }
+
+        // === VIDEO FUNCTIONS ULTRA PREMIUM COM ATIVAÇÃO DE BANNERS ===
+        function playVideo() {
+            videoWasClicked = true;
+            clearTimeout(videoAutoAdvanceTimer);
+            
+            const video = document.getElementById('demoVideo');
+            const playBtn = document.getElementById('playBtn');
+            const progressBar = document.getElementById('videoProgressBar');
+            const timer = document.getElementById('videoTimer');
+            
+            video.style.background = 'linear-gradient(45deg, #10b981, #059669)';
+            video.style.color = 'white';
+            playBtn.textContent = '⏸️';
+            progressBar.style.width = '100%';
+            timer.textContent = '✅ Vídeo assistido!';
+            announce('Reproduzindo vídeo demonstrativo');
+            
+            setTimeout(() => {
+                if (floatingCTAState === 'hidden') {
+                    showFloatingCTA();
+                    console.log('🎬 Floating CTA ativado pós-vídeo');
+                }
+            }, TIMING.postVideoFloating);
+            
+            setTimeout(() => {
+                if (notificationState === 'hidden') {
+                    showSmartNotification();
+                    console.log('🎬 Smart Notification ativado pós-vídeo');
+                }
+            }, TIMING.postVideoNotification);
+            
+            setTimeout(() => {
+                video.style.background = 'var(--gradient-dark-card)';
+                video.style.color = 'var(--color-text-primary)';
+                playBtn.textContent = '✅';
+                
+                if (floatingCTAState === 'discrete') {
+                    setTimeout(() => revealFloatingPrice(), 2000);
+                }
+                
+                setTimeout(() => {
+                    speak(`PERFEITO ${userData.name}! Sua mente analítica já percebeu o potencial. Isso que você viu gera de quinhentos a dois mil reais por contrato. E você pode dominar essa tecnologia hoje!`, 
+                          "🧠 Mente analítica detectada!");
+                    
+                    scrollToNextSection();
+                    showSection('mentalTest', () => {
+                        currentStep = 4;
+                        startMentalTestOriginal();
+                    });
+                }, TIMING.transitionDeep);
+            }, 15000);
+        }
+
+        function setupVideoAutoAdvance() {
+            videoAutoAdvanceTimer = setTimeout(() => {
+                if (!videoWasClicked) {
+                    speak(`Tudo bem ${userData.name}, vamos continuar! Vou te mostrar algo que pode mudar sua vida!`, 
+                          "⏭️ Continuando automaticamente...");
+                    
+                    setTimeout(() => {
+                        if (floatingCTAState === 'hidden') {
+                            showFloatingCTA();
+                            console.log('⏭️ Floating CTA ativado pós-auto-advance');
+                        }
+                    }, TIMING.postVideoFloating);
+                    
+                    setTimeout(() => {
+                        if (notificationState === 'hidden') {
+                            showSmartNotification();
+                            console.log('⏭️ Smart Notification ativado pós-auto-advance');
+                        }
+                    }, TIMING.postVideoNotification);
+                    
+                    if (floatingCTAState === 'discrete') {
+                        setTimeout(() => revealFloatingPrice(), 1000);
+                    }
+                    
+                    scrollToNextSection();
+                    showSection('mentalTest', () => {
+                        currentStep = 4;
+                        startMentalTestOriginal();
+                    });
+                }
+            }, 20000);
+        }
+
+        function scrollToNextSection() {
+            setTimeout(() => {
+                const mentalTest = document.getElementById('mentalTest');
+                if (mentalTest) {
+                    mentalTest.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                    
+                    setTimeout(() => {
+                        mentalTest.style.transform = 'scale(1.01)';
+                        setTimeout(() => {
+                            mentalTest.style.transform = 'scale(1)';
+                        }, 400);
+                    }, TIMING.scrollFocus);
+                }
+            }, TIMING.transitionDeep);
+        }
+
+        function startVideoProgressBar() {
+            let progress = 0;
+            const progressBar = document.getElementById('videoProgressBar');
+            const timer = document.getElementById('videoTimer');
+            
+            const interval = setInterval(() => {
+                if (videoWasClicked) {
+                    clearInterval(interval);
+                    progressBar.style.width = '100%';
+                    timer.textContent = '✅ Vídeo assistido!';
+                    return;
+                }
+                
+                progress += 1;
+                progressBar.style.width = `${(progress / 20) * 100}%`;
+                timer.textContent = `⏱️ Continua automaticamente em ${20 - progress}s se não assistir`;
+                
+                if (progress >= 20) {
+                    clearInterval(interval);
+                    progressBar.style.width = '100%';
+                    timer.textContent = '⏭️ Continuando automaticamente...';
+                }
+            }, 1000);
+        }
+
+        // === TIMING ORIGINAL - PERFEITO (HUMANO) ===
+        function startMentalTestOriginal() {
+            // GARANTIR QUE O TTS ANTERIOR COMPLETOU ANTES DE INICIAR
+            waitForSpeechComplete(() => {
+                setTimeout(() => {
+                    speak(`${userData.name}, vou te provar que sua mente não quer que você faça dinheiro, duvida?`, 
+                          "🧠 Sua mente não quer que você cresça...");
+                    
+                    setTimeout(() => {
+                        document.getElementById('testBurger').classList.add('visible');
+                        speak("Pense num hambúrguer.", "🍔 Pense num HAMBÚRGUER");
+                    }, 1800);
+                    
+                    setTimeout(() => {
+                        document.getElementById('testDog').classList.add('visible');
+                        speak("Pense num cachorro.", "🐶 Pense num CACHORRO");
+                    }, 2700);
+                    
+                    setTimeout(() => {
+                        waitForSpeechComplete(() => {
+                            setTimeout(() => {
+                                const pizza = document.getElementById('testPizza');
+                                pizza.classList.add('visible', 'forbidden');
+                                speak(`Então, não pense em uma pizza.`, 
+                                      "🍕 NÃO pense em PIZZA!");
+                                
+                                setTimeout(() => {
+                                    waitForSpeechComplete(() => {
+                                        const revelation = document.getElementById('revelation');
+                                        revelation.style.display = 'block';
+                                        revelation.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                        announce('Revelação do teste mental');
+                                        
+                                        speak(`${userData.name}, Por que você pensou mesmo eu pedindo para NÃO pensar? Sua mente não quer que você cresça! Ela não ler a palavra NÃO! Vai tentar te enganar para você não FAZER DINHEIRO e NÃO tomar uma decisão... Provei AQUI, ${userData.greeting} sô!`, 
+                                              "⚡ Por que você pensou mesmo assim?");
+                                        
+                                        showSection('offerSection', () => {
+                                            currentStep = 5;
+                                            startPriceAnimation();
+                                            speak(`Relaxa ${userData.name}! Eu tiro essa sua resistência mental AGORA! Sua mente está sussurrando que é muito caro, não vai dar certo. MENTIRA! O valor normal seria mil e novecentos e noventa e sete reais, mas hoje é só quarenta e sete reais! Quanto poderia estar fazendo por semana ou mês a mais? Sua mente acabou de relaxar, né?`, 
+                                                  "💰 Oferta final revelada!");
+                                            
+                                            showSection('checkoutSection', () => {
+                                                currentStep = 6;
+                                                speak("Agora só falta finalizar! Preenche seus dados e clique no botão gigante para começarmos!", 
+                                                      "💳 Finalizando pedido...");
+                                            });
+                                        });
+                                    });
+                                }, 1500);
+                            }, 1100);
+                        });
+                    }, 3800);
+                }, 1000); // DELAY ADICIONAL PARA GARANTIR SEPARAÇÃO COMPLETA
+            });
+        }
+
+        // === PRICE ANIMATION ULTRA PREMIUM ===
+        function startPriceAnimation() {
+            setTimeout(() => {
+                const strikethrough = document.getElementById('strikethrough');
+                const specialPrice = document.getElementById('specialPrice');
+                
+                if (strikethrough) {
+                    strikethrough.style.transform = 'scaleX(1)';
+                }
+                
+                setTimeout(() => {
+                    if (specialPrice) {
+                        specialPrice.style.opacity = '1';
+                        specialPrice.style.transform = 'scale(1)';
+                        
+                        if (floatingCTAState === 'discrete') {
+                            setTimeout(() => revealFloatingPrice(), 1000);
+                        }
+                    }
+                }, TIMING.transitionDeep);
+                
+                setTimeout(() => {
+                    if (floatingCTAState !== 'urgent') {
+                        activateUrgencyMode();
+                    }
+                }, 5000);
+                
+            }, 2000);
+        }
+
+        // === TRANSIÇÃO IMPACTANTE CARD 1 → CARD 2 ===
+        function submitName() {
+            const nome = nameInput.value.trim();
+            
+            if (!nome) {
+                nameInput.style.borderColor = 'var(--error-red)';
+                nameInput.placeholder = 'Por favor, digite seu nome';
+                showBubble('Digite seu nome para continuar!');
+                announce('Erro: Nome é obrigatório');
+                setTimeout(() => {
+                    nameInput.style.borderColor = 'var(--color-accent)';
+                    nameInput.placeholder = 'Digite seu primeiro nome';
+                }, 2000);
+                return;
+            }
+            
+            ativarSistemaAudio();
+            
+            userData.name = nome;
+            updateAllUserNames();
+            currentStep = 1;
+            
+            announce(`Olá ${nome}! Preparando sua experiência personalizada`);
+            
+            triggerAvatarPulse();
+            
+            const card1 = document.getElementById('card1Container');
+            const card2 = document.getElementById('card2Container');
+            
+            card1.classList.add('exiting');
+            
+            setTimeout(() => {
+                card1.style.display = 'none';
+                card2.style.display = 'block';
+                
+                card2.offsetHeight;
+                
+                requestAnimationFrame(() => {
+                    card2.classList.add('entering');
+                });
+                
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                
+                setTimeout(() => {
+                    executeCard2PremiumSequence();
+                }, 400);
+                
+            }, 300);
+        }
+
+        function loadLazySections() {
+            const container = document.getElementById('lazy-sections');
+            if (container) {
+                container.innerHTML = LAZY_SECTIONS;
+                updateAllUserNames();
+            }
+        }
+
+        function showSection(sectionId, callback) {
+            waitForSpeechComplete(() => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.classList.add('active');
+                    section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    announce(`Seção ${sectionId} carregada`);
+                    if (callback) setTimeout(callback, 1200);
+                }
+            });
+        }
+
+        function waitForSpeechComplete(callback) {
+            const checkComplete = () => {
+                if (!isSpeaking && speechQueue.length === 0) {
+                    setTimeout(callback, 1200);
+                } else {
+                    setTimeout(checkComplete, 400);
+                }
+            };
+            checkComplete();
+        }
+
+        function updateAllUserNames() {
+            for (let i = 1; i <= 11; i++) {
+                const element = document.getElementById(`userName${i}`);
+                if (element) element.textContent = userData.name;
+            }
+            
+            const elements = ['greetingOnly2', 'regionalDemonym', 'userCity3', 'userCity4', 'userCity2'];
+            elements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    if (id.includes('greeting')) element.textContent = userData.greeting;
+                    else if (id.includes('demonym')) element.textContent = userData.demonym;
+                    else if (id.includes('City')) element.textContent = userData.city;
+                }
+            });
+        }
+
+        function finalizeOrder() {
+            const email = document.getElementById('userEmail').value.trim();
+            const whatsapp = document.getElementById('userWhatsapp').value.trim();
+            
+            if (!email || !email.includes('@')) {
+                showBubble('Digite um email válido!');
+                announce('Erro: Email inválido');
+                return;
+            }
+            
+            if (!whatsapp || whatsapp.length < 10) {
+                showBubble('Digite um WhatsApp válido!');
+                announce('Erro: WhatsApp inválido');
+                return;
+            }
+            
+            userData.email = email;
+            userData.whatsapp = whatsapp;
+            announce('Pedido finalizado com sucesso');
+            
+            document.getElementById('checkoutSection').classList.remove('active');
+            
+            setTimeout(() => {
+                const section = document.getElementById('whatsappSection');
+                section.classList.add('active');
+                section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                currentStep = 7;
+                updateProgress(100);
+                
+                setTimeout(() => {
+                    speak(`Perfeito, ${userData.name}! Te vejo do outro lado no WhatsApp!`, 
+                          "📱 Redirecionando para WhatsApp...");
+                }, 800);
+            }, 600);
+        }
+
+        function openWhatsApp() {
+            const message = encodeURIComponent(
+                `Olá Marcelo! Sou ${userData.name} de ${userData.city}-${userData.state}. ${userData.greeting} ` +
+                `Acabei de finalizar o pedido do curso por R$ 47,00. ` +
+                `Email: ${userData.email} | WhatsApp: ${userData.whatsapp} | ` +
+                `Contexto: ${userData.periodGreeting}, gosto de ${userData.food}. ` +
+                `Por favor, me envie o acesso!`
+            );
+            
+            announce('Abrindo WhatsApp');
+            window.open(`https://wa.me/5531987654321?text=${message}`, '_blank');
+        }
+
+        // === INITIALIZATION ULTRA PREMIUM ===
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Marcelo D\'Ávila ULTRA PREMIUM LUXURY com APIs duplas iniciado!');
+            
+            initScrollTracking();
+            initTimeTracking();
+            detectLocation();
+            
+            setTimeout(() => {
+                startAvatarBreathing();
+            }, 2000);
+            
+            if ('speechSynthesis' in window) {
+                speechSynthesis.getVoices();
+                
+                speechSynthesis.addEventListener('voiceschanged', function() {
+                    vozBrasileiraCard1 = obterVozBrasileira();
+                    
+                    console.log('🗣️ Vozes carregadas:', speechSynthesis.getVoices().length);
+                    
+                    if (vozBrasileiraCard1) {
+                        console.log('🇧🇷 Voz brasileira selecionada:', vozBrasileiraCard1.name);
+                    } else {
+                        console.warn('⚠️ Nenhuma voz brasileira encontrada');
+                    }
+                    
+                    const todasVozes = speechSynthesis.getVoices();
+                    console.log('📋 Vozes disponíveis:', todasVozes.map(v => `${v.name} (${v.lang})`));
+                });
+                
+                setTimeout(() => {
+                    if (!vozBrasileiraCard1) {
+                        vozBrasileiraCard1 = obterVozBrasileira();
+                        if (vozBrasileiraCard1) {
+                            console.log('🔄 Voz brasileira carregada via fallback:', vozBrasileiraCard1.name);
+                        }
+                    }
+                }, 1000);
+            } else {
+                console.warn('❌ TTS não suportado neste navegador');
+            }
+            
+            nameInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    ativarSistemaAudio();
+                    submitName();
+                }
+            });
+            
+            nameInput.addEventListener('focus', function() {
+                triggerAvatarPulse();
+            });
+            
+            nameInput.addEventListener('input', function() {
+                if (this.value.length > 0) {
+                    stopAvatarBreathing();
+                    startAvatarBreathing();
+                }
+            });
+            
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    console.log('👁️ User switched tab - potential drop-off point');
+                    stopAvatarBreathing();
+                } else {
+                    console.log('👁️ User returned - re-engage opportunity');
+                    if (currentStep === 1) {
+                        startAvatarBreathing();
+                        triggerAvatarPulse();
+                    }
+                }
+            });
+            
+            // ✨ INICIA SEQUÊNCIA PREMIUM CARD 1 AUTOMATICAMENTE COM TIMINGS CORRIGIDOS
+            setTimeout(() => {
+                executeCard1PremiumSequence();
+            }, 1000);
+            
+            updateProgress(5);
+            announce('Página carregada. Digite seu nome para começar');
+            console.log('✅ Sistema ULTRA PREMIUM LUXURY com APIs duplas iniciado!');
+            console.log('📊 Timing CORRIGIDO:', TIMING);
+            console.log('🔧 API 1 (Principal):', 'https://ipinfo.io/json?token=50aa9ee780c6f0');
+            console.log('🔧 API 2 (Backup):', 'https://api.geogs.io/json');
+            console.log('⏱️ HERO HOLD AUMENTADO:', TIMING.heroShow + 'ms (5s)');
+            console.log('⏱️ PAPER HOLD CORRIGIDO:', TIMING.paperHold + 'ms (2.4s)');
+            console.log('✨ Efeitos de avatar disponíveis: pulse, breathing, speaking');
+            console.log('🎬 Sequência premium Card 1 com 5s no hero será executada automaticamente');
+            console.log('🎨 Nova paleta LUXURY aplicada: Azul petróleo profundo + Dourado puro');
+            console.log('🌍 Sistema de geolocalização dupla: ipinfo.io + geogs.io + fallback');
+            console.log('🎯 6 nichos premium integrados: Padaria, Consultório, Escola, Advocacia, Contabilidade, Clínica');
+        });
+
+        window.addEventListener('beforeunload', function() {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel();
+            }
+            stopAvatarBreathing();
+            stopAvatarSpeaking();
+        });
+    </script>
+</body>
+</html>
